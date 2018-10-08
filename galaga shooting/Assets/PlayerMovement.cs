@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour {
 
 	float maxSpeed = 5f;
+    float shipBoundary = 0.5f;
 
 	// Use this for initialization
 	void Start () {
@@ -24,6 +25,27 @@ public class PlayerMovement : MonoBehaviour {
 
 		pos.x += Input.GetAxis ("Horizontal") * maxSpeed * Time.deltaTime;
 
-		transform.position = pos;
+        if(pos.y+shipBoundary > Camera.main.orthographicSize)
+        {
+            pos.y = Camera.main.orthographicSize - shipBoundary;
+        }
+        if (pos.y-shipBoundary <  -Camera.main.orthographicSize)
+        {
+            pos.y = -Camera.main.orthographicSize + shipBoundary;
+        }
+
+        float screenRatio = (float)Screen.width / (float)Screen.height;
+        float widthOrtho = Camera.main.orthographicSize * screenRatio;
+
+        if (pos.x + shipBoundary > widthOrtho)
+        {
+            pos.x = widthOrtho - shipBoundary;
+        }
+        if (pos.x - shipBoundary < -widthOrtho)
+        {
+            pos.x = -widthOrtho + shipBoundary;
+        }
+
+        transform.position = pos;
 	}
 }

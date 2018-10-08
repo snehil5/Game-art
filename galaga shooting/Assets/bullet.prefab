@@ -23,7 +23,9 @@ GameObject:
   - component: {fileID: 50759659284469020}
   - component: {fileID: 61329617391398716}
   - component: {fileID: 114079662870143474}
-  m_Layer: 8
+  - component: {fileID: 114598629421955200}
+  - component: {fileID: 114438208733478918}
+  m_Layer: 0
   m_Name: bullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -72,7 +74,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -99,6 +101,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f7e6bba2640fab428b1c4c286df8437, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114438208733478918
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1949076673984150}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3dd855aa0544a174faf9e5c75a0387d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timer: 4
+--- !u!114 &114598629421955200
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1949076673984150}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14817df635f842945b483bd36e98664d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 1
+  invulnPeriod: 0
 --- !u!212 &212829778401476696
 SpriteRenderer:
   m_ObjectHideFlags: 1
