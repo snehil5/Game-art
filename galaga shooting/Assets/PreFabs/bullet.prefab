@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 61329617391398716}
   - component: {fileID: 114079662870143474}
   - component: {fileID: 114340470586988430}
+  - component: {fileID: 114749999123301274}
   m_Layer: 8
   m_Name: bullet
   m_TagString: Untagged
@@ -113,6 +114,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 1
   invulnPeriod: 0
+--- !u!114 &114749999123301274
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1949076673984150}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3dd855aa0544a174faf9e5c75a0387d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timer: 5
 --- !u!212 &212829778401476696
 SpriteRenderer:
   m_ObjectHideFlags: 1
