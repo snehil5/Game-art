@@ -9,6 +9,7 @@ public class projectile : MonoBehaviour
     public float lifetime;
     public int damage;
     Animator eyeanim;
+    public GameObject projectileeffect;
 
     void Start()
     {
@@ -53,6 +54,7 @@ public class projectile : MonoBehaviour
 
     void DestroyProjectile()
     {
+        Destroy(Instantiate(projectileeffect, transform.position, Quaternion.identity), .5f);
         Destroy(gameObject);
     }
 
