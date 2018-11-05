@@ -15,4 +15,16 @@ public class MoveForward : MonoBehaviour {
 
 		transform.position = pos;
 	}
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Enemy")) { 
+            Debug.Log("I AM HITTING TEH BOSS");
+        }
+    }
+
+
+
+
+
 }
