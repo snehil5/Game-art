@@ -41,6 +41,9 @@ TagManager:
   - name: background
     uniqueID: 4083693217
     locked: 0
+  - name: uistuff
+    uniqueID: 1808828489
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0

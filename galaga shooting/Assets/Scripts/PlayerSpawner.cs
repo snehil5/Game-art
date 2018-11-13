@@ -1,14 +1,18 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class PlayerSpawner : MonoBehaviour {
 
     public GameObject playerPrefab;
     GameObject playerInstance;
+    public int currentscenenumber;
 
     public int numLives = 3;
     public int score;
+    public Button restartbutton;
 
     float respawnTimer;
 
@@ -16,7 +20,8 @@ public class PlayerSpawner : MonoBehaviour {
 	void Start () {
         score = 0;
         SpawnPlayer();
-	}
+        restartbutton.enabled = false;
+    }
 
     void SpawnPlayer()
     {
@@ -41,7 +46,14 @@ public class PlayerSpawner : MonoBehaviour {
                 SpawnPlayer();
             }
         }
-	}
+
+        RestartGame();
+
+
+
+
+
+    }
 
     void OnGUI()
     {
@@ -53,6 +65,17 @@ public class PlayerSpawner : MonoBehaviour {
         else
         {
             GUI.Label(new Rect(Screen.width/2 -50, Screen.height/2 - 25, 100, 50), "Game Over! Total Score:" + score);
+            GUI.Label(new Rect(Screen.width / 2 - 50, Screen.height / 2 + 25, 200, 150), "Press R to restart!");
+            
         }
+    }
+
+    public void RestartGame()
+    {
+        if (Input.GetKey(KeyCode.R))
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
+        
     }
 }
