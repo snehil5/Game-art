@@ -55,8 +55,10 @@ public class DamageHandler : MonoBehaviour {
         
         if (health <= 0)
         {
-           spwn.AddScore(5);
+            Debug.Log("DEAD");
             Die();
+            spwn.AddScore(5);
+            
         }
     }
 

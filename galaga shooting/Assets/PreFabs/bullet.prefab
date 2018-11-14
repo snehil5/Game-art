@@ -23,11 +23,10 @@ GameObject:
   - component: {fileID: 50759659284469020}
   - component: {fileID: 61329617391398716}
   - component: {fileID: 114079662870143474}
-  - component: {fileID: 114340470586988430}
   - component: {fileID: 114749999123301274}
   m_Layer: 8
   m_Name: bullet
-  m_TagString: Untagged
+  m_TagString: bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -101,19 +100,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f7e6bba2640fab428b1c4c286df8437, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &114340470586988430
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1949076673984150}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 14817df635f842945b483bd36e98664d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 1
-  invulnPeriod: 0
+  maxSpeed: 15
 --- !u!114 &114749999123301274
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -125,7 +112,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3dd855aa0544a174faf9e5c75a0387d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timer: 5
+  timer: 0.55
+  deathFX: {fileID: 1761808268656658, guid: fa0a2e7fe7867fc45ae28809cd58df4c, type: 2}
 --- !u!212 &212829778401476696
 SpriteRenderer:
   m_ObjectHideFlags: 1

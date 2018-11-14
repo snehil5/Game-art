@@ -22,6 +22,7 @@ public class PlayerShooting : MonoBehaviour {
 
         if (Input.GetButton("Fire1") && cooldownTimer <= 0)
         {
+            Audio.PlaySound("shooting");
             //Debug.Log("pew");
             cooldownTimer = fireDelay;
 
