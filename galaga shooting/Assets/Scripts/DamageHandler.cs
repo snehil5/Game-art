@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class DamageHandler : MonoBehaviour {
 
+    private Animator MyAnimator; 
     public int health = 1;
     public float invulnPeriod = 0;
     float invulnTimer = 0;
@@ -12,6 +13,7 @@ public class DamageHandler : MonoBehaviour {
 
     private void Start()
     {
+        MyAnimator = gameObject.GetComponent<Animator>();
         correctLayer = gameObject.layer;
         GameObject spwnObject = GameObject.FindWithTag("Respawn");
         if(spwnObject != null)
@@ -23,16 +25,21 @@ public class DamageHandler : MonoBehaviour {
             Debug.Log("cannot find PlayerSpawner.");
         }
     }
-    private void OnTriggerEnter2D()
+    private void OnTriggerEnter2D(Collider2D col)
     {
-        Debug.Log("Trigger!");
-
-        health--;
-        if(invulnPeriod > 0)
+        if (col.tag == "Enemy" || col.tag == "bullet")
         {
-            invulnTimer = invulnPeriod;
-            gameObject.layer = 10;
+            Debug.Log("Crash!");
+
+            health--;
+            StartCoroutine(HurtBlinker(.2f));
+            if (invulnPeriod > 0)
+            {
+                invulnTimer = invulnPeriod;
+                gameObject.layer = 10;
+            }
         }
+        
     }
 
     void Update()
@@ -58,4 +65,18 @@ public class DamageHandler : MonoBehaviour {
         Destroy(gameObject);
         
     }
+
+    IEnumerator HurtBlinker(float hurtTime)
+    {
+
+
+        MyAnimator.SetLayerWeight(1, 1f);
+
+        yield return new WaitForSeconds(hurtTime);
+
+
+
+        MyAnimator.SetLayerWeight(1, 0f);
+    }
+
 }
