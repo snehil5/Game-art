@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
 public class PlayerSpawner : MonoBehaviour {
 
     public GameObject playerPrefab;
@@ -82,10 +81,6 @@ public class PlayerSpawner : MonoBehaviour {
     {
         return score;
     }
-    public void labelShow()
-    {
-        GUI.Label(new Rect(Screen.width / 2 - 50, Screen.height / 2 - 25, 100, 50), "Level Over! \nTotal Score:" + getScore());
-        return;
-    }
+    
 }
     
