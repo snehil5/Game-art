@@ -1,16 +1,21 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerSpawner : MonoBehaviour {
 
     public GameObject playerPrefab;
+    public GameObject retry;
+    public GameObject mainMenu;
+
     GameObject playerInstance;
 
     public int numLives = 3;
     public int score;
-
+    float timeLeft;
     float respawnTimer;
+    public int count = 0;
 
 	// Use this for initialization
 	void Start () {
@@ -28,11 +33,27 @@ public class PlayerSpawner : MonoBehaviour {
     public void AddScore(int newScore)
     {
         score += newScore;
+
+        if (score >= 115)
+        {
+            timeLeft = 5.0f;
+            
+        }
     }
 
     // Update is called once per frame
     void Update () {
-		if(playerInstance == null && numLives > 0)
+
+        if(score >= 115 ) {
+            
+            timeLeft -= Time.deltaTime;
+            if (timeLeft < 0)
+            {
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            }
+        }
+
+        if (playerInstance == null && numLives > 0)
         {
             respawnTimer -= Time.deltaTime;
             
@@ -53,6 +74,18 @@ public class PlayerSpawner : MonoBehaviour {
         else
         {
             GUI.Label(new Rect(Screen.width/2 -50, Screen.height/2 - 25, 100, 50), "Game Over! Total Score:" + score);
+            retry.SetActive(true);
+            mainMenu.SetActive(true);
         }
     }
+    public int getScore()
+    {
+        return score;
+    }
+    public void labelShow()
+    {
+        GUI.Label(new Rect(Screen.width / 2 - 50, Screen.height / 2 - 25, 100, 50), "Level Over! \nTotal Score:" + getScore());
+        return;
+    }
 }
+    

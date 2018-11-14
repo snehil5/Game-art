@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class asteroid : MonoBehaviour {
     public GameObject asteroidPrefab;
+    public float tumble;
 
 	// Use this for initialization
 	void Start () {
