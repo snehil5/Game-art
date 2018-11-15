@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class DamageHandler : MonoBehaviour {
 
+
     private Animator MyAnimator; 
     public int health = 1;
     public float invulnPeriod = 0;

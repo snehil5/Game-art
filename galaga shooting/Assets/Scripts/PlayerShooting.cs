@@ -2,28 +2,39 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerShooting : MonoBehaviour {
+public class PlayerShooting : MonoBehaviour
+{
 
-	public GameObject bulletPrefab;
-    public Transform p1, p2, p3, p4, p5,p6,p7;
+    public int powerTime;
+    private int powerTimer = 0;
+    private Count Timer;
+
+    public GameObject bulletPrefab;
+    public Transform p1, p2, p3, p4, p5, p6, p7;
     public int shootinglvl;
 
-	public float fireDelay = 0.25f;
-	float cooldownTimer= 0;
+    public float fireDelay = 0.25f;
+    float cooldownTimer = 0;
 
     private void Start()
     {
+        Timer = gameObject.GetComponent<Count>();
+        StartCoroutine(StartCountdown(powerTime));
         shootinglvl = 0;
     }
 
     // Update is called once per frame
-    void Update() {
+    void Update()
+    {
         cooldownTimer -= Time.deltaTime;
+
+        //Debug.Log("Timer is at " + Timer.powerTimer);
+
 
         if (Input.GetButton("Fire1") && cooldownTimer <= 0)
         {
             Audio.PlaySound("shooting");
-            //Debug.Log("pew");
+
             cooldownTimer = fireDelay;
 
             if (shootinglvl == 0)
@@ -58,19 +69,57 @@ public class PlayerShooting : MonoBehaviour {
                 Instantiate(bulletPrefab, p7.position, p7.rotation);
             }
         }
-	}
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag == "powerup")
         {
+
             collectPower();
+            resetTimer();
+            //StartCoroutine(Timer.StartCountdown(powerTime));
             Debug.Log(shootinglvl);
+            Debug.Log(powerTimer);
+
         }
     }
 
     void collectPower()
     {
         shootinglvl += 1;
+        //powerTimer = powerTime;
+
+    }
+
+    void resetTimer()
+    {
+        powerTimer += powerTime;
+        if (powerTimer > powerTime)
+            powerTimer = powerTime;
+            
+    }
+
+
+    public IEnumerator StartCountdown(int powerTime)
+    {
+        
+        while (powerTimer > -1)
+        {
+
+            Debug.Log("Countdown: " + powerTimer);
+            yield return new WaitForSeconds(1.0f);
+            if (powerTimer > 0)
+            {
+                powerTimer--;
+            }
+            if( powerTimer == 0)
+            {
+                shootinglvl = 0;
+            }
+
+        }
+        
+
     }
 }
