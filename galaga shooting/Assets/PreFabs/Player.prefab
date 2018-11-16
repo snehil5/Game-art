@@ -344,6 +344,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cdafefe9a393a3b41a8dc17033469434, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  powerTime: 30
   bulletPrefab: {fileID: 1949076673984150, guid: 7f9e7506878970549921dfeb9cd52f74,
     type: 2}
   p1: {fileID: 4677149113341652}
@@ -353,7 +354,7 @@ MonoBehaviour:
   p5: {fileID: 4704428656544480}
   p6: {fileID: 4209170200687826}
   p7: {fileID: 4203481345256724}
-  shootinglvl: 3
+  shootinglvl: 0
   fireDelay: 0.05
 --- !u!114 &114695675668066466
 MonoBehaviour:
