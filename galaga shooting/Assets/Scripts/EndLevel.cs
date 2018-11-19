@@ -5,7 +5,6 @@ using UnityEngine;
 public class EndLevel : MonoBehaviour {
 
     public PlayerSpawner score;
-    public GameObject nextButton;
 
     private void OnGUI()
     {
