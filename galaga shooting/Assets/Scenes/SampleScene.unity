@@ -488,7 +488,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.017276704, y: 0.017276645}
+  m_Offset: {x: -0.023742177, y: 0.00019401312}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -499,7 +499,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.10544658, y: 0.11361647}
+  m_Size: {x: 0.35611767, y: 0.3163274}
   m_EdgeRadius: 0
 --- !u!212 &269008617
 SpriteRenderer:
@@ -561,6 +561,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 1
+  explosion: {fileID: 0}
   invulnPeriod: 0
 --- !u!114 &269008619
 MonoBehaviour:
@@ -697,7 +698,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.017276704, y: 0.017276645}
+  m_Offset: {x: -0.023742199, y: 0.001332812}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -708,7 +709,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.10544658, y: 0.11361647}
+  m_Size: {x: 0.35155994, y: 0.33227092}
   m_EdgeRadius: 0
 --- !u!212 &316146775
 SpriteRenderer:
@@ -770,6 +771,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 1
+  explosion: {fileID: 0}
   invulnPeriod: 0
 --- !u!114 &316146777
 MonoBehaviour:
@@ -1222,7 +1224,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.017276704, y: 0.017276645}
+  m_Offset: {x: -0.008556813, y: -0.008557141}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1233,7 +1235,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.10544658, y: 0.11361647}
+  m_Size: {x: 0.3844486, y: 0.31684047}
   m_EdgeRadius: 0
 --- !u!212 &651964639
 SpriteRenderer:
@@ -1295,6 +1297,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 1
+  explosion: {fileID: 0}
   invulnPeriod: 0
 --- !u!114 &651964641
 MonoBehaviour:
@@ -1777,7 +1780,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.017276704, y: 0.017276645}
+  m_Offset: {x: -0.016905673, y: 0.00019419193}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1788,7 +1791,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.10544658, y: 0.11361647}
+  m_Size: {x: 0.35611755, y: 0.32543755}
   m_EdgeRadius: 0
 --- !u!212 &890691700
 SpriteRenderer:
@@ -1850,6 +1853,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 1
+  explosion: {fileID: 0}
   invulnPeriod: 0
 --- !u!114 &890691702
 MonoBehaviour:
@@ -1985,7 +1989,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.017276704, y: 0.017276645}
+  m_Offset: {x: -0.026021056, y: -0.006638646}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1996,7 +2000,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.10544658, y: 0.11361647}
+  m_Size: {x: 0.34244472, y: 0.3163274}
   m_EdgeRadius: 0
 --- !u!212 &914641630
 SpriteRenderer:
@@ -2058,6 +2062,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 1
+  explosion: {fileID: 0}
   invulnPeriod: 0
 --- !u!114 &914641632
 MonoBehaviour:
@@ -2126,7 +2131,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.017276704, y: 0.017276645}
+  m_Offset: {x: -0.022263862, y: 0.0014685541}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -2137,7 +2142,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.10544658, y: 0.11361647}
+  m_Size: {x: 0.35850614, y: 0.3270251}
   m_EdgeRadius: 0
 --- !u!212 &1050268090
 SpriteRenderer:
@@ -2219,6 +2224,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 1
+  explosion: {fileID: 0}
   invulnPeriod: 0
 --- !u!4 &1050268094
 Transform:
@@ -2363,7 +2369,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.017276704, y: 0.017276645}
+  m_Offset: {x: -0.024881631, y: -0.0009447634}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -2374,7 +2380,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.10544658, y: 0.11361647}
+  m_Size: {x: 0.35383874, y: 0.30949432}
   m_EdgeRadius: 0
 --- !u!212 &1097093966
 SpriteRenderer:
@@ -2436,6 +2442,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 1
+  explosion: {fileID: 0}
   invulnPeriod: 0
 --- !u!114 &1097093968
 MonoBehaviour:
@@ -2602,7 +2609,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.017276704, y: 0.017276645}
+  m_Offset: {x: -0.027160376, y: -0.0043612123}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -2613,7 +2620,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.10544658, y: 0.11361647}
+  m_Size: {x: 0.36295414, y: 0.3345483}
   m_EdgeRadius: 0
 --- !u!212 &1161474027
 SpriteRenderer:
@@ -2675,6 +2682,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 1
+  explosion: {fileID: 0}
   invulnPeriod: 0
 --- !u!114 &1161474029
 MonoBehaviour:
@@ -2810,7 +2818,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.017276704, y: 0.017276645}
+  m_Offset: {x: -0.026020996, y: -0.002083525}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -2821,7 +2829,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.10544658, y: 0.11361647}
+  m_Size: {x: 0.35155994, y: 0.32999292}
   m_EdgeRadius: 0
 --- !u!212 &1193087966
 SpriteRenderer:
@@ -2883,6 +2891,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 1
+  explosion: {fileID: 0}
   invulnPeriod: 0
 --- !u!114 &1193087968
 MonoBehaviour:
@@ -3410,7 +3419,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.017276704, y: 0.017276645}
+  m_Offset: {x: -0.018890217, y: 0.013831854}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -3421,7 +3430,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.10544658, y: 0.11361647}
+  m_Size: {x: 0.35000387, y: 0.29961807}
   m_EdgeRadius: 0
 --- !u!212 &1389639545
 SpriteRenderer:
@@ -3483,6 +3492,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 1
+  explosion: {fileID: 0}
   invulnPeriod: 0
 --- !u!114 &1389639547
 MonoBehaviour:
@@ -4398,7 +4408,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.017276704, y: 0.017276645}
+  m_Offset: {x: -0.024882019, y: 0.00019432604}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -4409,7 +4419,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.10544658, y: 0.11361647}
+  m_Size: {x: 0.35839653, y: 0.32543752}
   m_EdgeRadius: 0
 --- !u!212 &1959637821
 SpriteRenderer:
@@ -4471,6 +4481,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 1
+  explosion: {fileID: 0}
   invulnPeriod: 0
 --- !u!114 &1959637823
 MonoBehaviour:
@@ -4583,7 +4594,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.017276704, y: 0.017276645}
+  m_Offset: {x: -0.027160466, y: -0.0054998994}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -4594,7 +4605,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.10544658, y: 0.11361647}
+  m_Size: {x: 0.3492813, y: 0.33227062}
   m_EdgeRadius: 0
 --- !u!212 &1977709901
 SpriteRenderer:
@@ -4656,6 +4667,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 1
+  explosion: {fileID: 0}
   invulnPeriod: 0
 --- !u!114 &1977709903
 MonoBehaviour:

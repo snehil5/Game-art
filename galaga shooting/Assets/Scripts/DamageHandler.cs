@@ -5,6 +5,7 @@ using UnityEngine;
 public class DamageHandler : MonoBehaviour {
 
     public int health = 1;
+    public GameObject explosion;
     public float invulnPeriod = 0;
     float invulnTimer = 0;
     int correctLayer;
@@ -55,6 +56,7 @@ public class DamageHandler : MonoBehaviour {
 
     void Die()
     {
+       
         Destroy(gameObject);
         
     }
