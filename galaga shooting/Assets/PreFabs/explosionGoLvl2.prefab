@@ -21,7 +21,6 @@ GameObject:
   - component: {fileID: 4114545042306888}
   - component: {fileID: 212029370237131182}
   - component: {fileID: 95594454576742494}
-  - component: {fileID: 114229504576014992}
   m_Layer: 0
   m_Name: explosionGoLvl2
   m_TagString: Untagged
@@ -60,17 +59,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &114229504576014992
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1119533763840070}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 42435e9e31d4f28479e5049423a0f24d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!212 &212029370237131182
 SpriteRenderer:
   m_ObjectHideFlags: 1

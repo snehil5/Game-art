@@ -1,19 +1,30 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class destroybycontact : MonoBehaviour {
     public GameObject ExplosionGo; // explosion
-    private void OnTriggerEnter(Collider other)
-    {
+   // private void OnTriggerEnter(Collider other)
+   // {
         
-        Destroy(gameObject);
-    }
+     //   Destroy(gameObject);
+    //}
     private void OnTriggerEnter2D(Collider2D other)
     {
         PlayExplosion();
-        Destroy(gameObject);
-        Destroy(other.gameObject);
+
+        Scene currentScene = SceneManager.GetActiveScene();
+
+        // Retrieve the name of this scene.
+        string sceneName = currentScene.name;
+
+        if (sceneName == "SecondLevel")
+        {
+            Destroy(gameObject);
+            Destroy(other.gameObject);
+        }
+        
     }
     void PlayExplosion()
     {

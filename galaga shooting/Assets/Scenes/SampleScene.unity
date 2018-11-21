@@ -416,6 +416,7 @@ GameObject:
   - component: {fileID: 269008616}
   - component: {fileID: 269008615}
   - component: {fileID: 269008614}
+  - component: {fileID: 269008620}
   m_Layer: 9
   m_Name: Bee_enemy_Fomation B (2)
   m_TagString: Untagged
@@ -561,7 +562,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 1
-  explosion: {fileID: 0}
   invulnPeriod: 0
 --- !u!114 &269008619
 MonoBehaviour:
@@ -577,6 +577,19 @@ MonoBehaviour:
   bulletPrefab: {fileID: 1949076673984150, guid: cf33a6b330a23e943acf236effa11243,
     type: 2}
   fireDelay: 1
+--- !u!114 &269008620
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 269008612}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 385109c295c303c459924838ed61bf0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ExplosionGo: {fileID: 1119533763840070, guid: 9fdf3930d7eba5c48871264a4dfd8a2c,
+    type: 2}
 --- !u!1 &311712658
 GameObject:
   m_ObjectHideFlags: 0
@@ -625,6 +638,7 @@ GameObject:
   - component: {fileID: 316146774}
   - component: {fileID: 316146773}
   - component: {fileID: 316146772}
+  - component: {fileID: 316146778}
   m_Layer: 9
   m_Name: Bee Left 1 (4)
   m_TagString: Untagged
@@ -771,7 +785,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 1
-  explosion: {fileID: 0}
   invulnPeriod: 0
 --- !u!114 &316146777
 MonoBehaviour:
@@ -787,6 +800,19 @@ MonoBehaviour:
   bulletPrefab: {fileID: 1949076673984150, guid: cf33a6b330a23e943acf236effa11243,
     type: 2}
   fireDelay: 1
+--- !u!114 &316146778
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 316146770}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 385109c295c303c459924838ed61bf0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ExplosionGo: {fileID: 1119533763840070, guid: 9fdf3930d7eba5c48871264a4dfd8a2c,
+    type: 2}
 --- !u!1 &339493099
 GameObject:
   m_ObjectHideFlags: 0
@@ -1144,6 +1170,7 @@ GameObject:
   - component: {fileID: 651964638}
   - component: {fileID: 651964637}
   - component: {fileID: 651964636}
+  - component: {fileID: 651964642}
   m_Layer: 9
   m_Name: Bee Left 1
   m_TagString: Untagged
@@ -1297,7 +1324,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 1
-  explosion: {fileID: 0}
   invulnPeriod: 0
 --- !u!114 &651964641
 MonoBehaviour:
@@ -1313,6 +1339,19 @@ MonoBehaviour:
   bulletPrefab: {fileID: 1949076673984150, guid: cf33a6b330a23e943acf236effa11243,
     type: 2}
   fireDelay: 1
+--- !u!114 &651964642
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 651964634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 385109c295c303c459924838ed61bf0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ExplosionGo: {fileID: 1119533763840070, guid: 9fdf3930d7eba5c48871264a4dfd8a2c,
+    type: 2}
 --- !u!1 &677883233
 GameObject:
   m_ObjectHideFlags: 0
@@ -1700,6 +1739,7 @@ GameObject:
   - component: {fileID: 890691699}
   - component: {fileID: 890691698}
   - component: {fileID: 890691697}
+  - component: {fileID: 890691703}
   m_Layer: 9
   m_Name: Bee Left 1 (2)
   m_TagString: Untagged
@@ -1853,7 +1893,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 1
-  explosion: {fileID: 0}
   invulnPeriod: 0
 --- !u!114 &890691702
 MonoBehaviour:
@@ -1869,6 +1908,19 @@ MonoBehaviour:
   bulletPrefab: {fileID: 1949076673984150, guid: cf33a6b330a23e943acf236effa11243,
     type: 2}
   fireDelay: 1
+--- !u!114 &890691703
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 890691695}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 385109c295c303c459924838ed61bf0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ExplosionGo: {fileID: 1119533763840070, guid: 9fdf3930d7eba5c48871264a4dfd8a2c,
+    type: 2}
 --- !u!1 &907950452
 GameObject:
   m_ObjectHideFlags: 0
@@ -1912,6 +1964,7 @@ GameObject:
   - component: {fileID: 914641629}
   - component: {fileID: 914641628}
   - component: {fileID: 914641627}
+  - component: {fileID: 914641633}
   m_Layer: 9
   m_Name: Bee Right apart (1)
   m_TagString: Untagged
@@ -2062,7 +2115,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 1
-  explosion: {fileID: 0}
   invulnPeriod: 0
 --- !u!114 &914641632
 MonoBehaviour:
@@ -2078,6 +2130,19 @@ MonoBehaviour:
   bulletPrefab: {fileID: 1949076673984150, guid: cf33a6b330a23e943acf236effa11243,
     type: 2}
   fireDelay: 1
+--- !u!114 &914641633
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 914641625}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 385109c295c303c459924838ed61bf0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ExplosionGo: {fileID: 1119533763840070, guid: 9fdf3930d7eba5c48871264a4dfd8a2c,
+    type: 2}
 --- !u!1 &1050268087
 GameObject:
   m_ObjectHideFlags: 0
@@ -2093,6 +2158,7 @@ GameObject:
   - component: {fileID: 1050268089}
   - component: {fileID: 1050268091}
   - component: {fileID: 1050268088}
+  - component: {fileID: 1050268092}
   m_Layer: 9
   m_Name: Bee_enemy_Fomation B
   m_TagString: Untagged
@@ -2211,6 +2277,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1050268092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1050268087}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 385109c295c303c459924838ed61bf0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ExplosionGo: {fileID: 1119533763840070, guid: 9fdf3930d7eba5c48871264a4dfd8a2c,
+    type: 2}
 --- !u!114 &1050268093
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2224,7 +2303,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 1
-  explosion: {fileID: 0}
   invulnPeriod: 0
 --- !u!4 &1050268094
 Transform:
@@ -2297,6 +2375,7 @@ GameObject:
   - component: {fileID: 1097093965}
   - component: {fileID: 1097093964}
   - component: {fileID: 1097093963}
+  - component: {fileID: 1097093969}
   m_Layer: 9
   m_Name: Bee_enemy_Fomation B (1)
   m_TagString: Untagged
@@ -2442,7 +2521,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 1
-  explosion: {fileID: 0}
   invulnPeriod: 0
 --- !u!114 &1097093968
 MonoBehaviour:
@@ -2458,6 +2536,19 @@ MonoBehaviour:
   bulletPrefab: {fileID: 1949076673984150, guid: cf33a6b330a23e943acf236effa11243,
     type: 2}
   fireDelay: 1
+--- !u!114 &1097093969
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1097093961}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 385109c295c303c459924838ed61bf0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ExplosionGo: {fileID: 1119533763840070, guid: 9fdf3930d7eba5c48871264a4dfd8a2c,
+    type: 2}
 --- !u!1 &1123837826
 GameObject:
   m_ObjectHideFlags: 0
@@ -2529,6 +2620,7 @@ GameObject:
   - component: {fileID: 1161474026}
   - component: {fileID: 1161474025}
   - component: {fileID: 1161474024}
+  - component: {fileID: 1161474030}
   m_Layer: 9
   m_Name: Bee Left 1 (3)
   m_TagString: Untagged
@@ -2682,7 +2774,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 1
-  explosion: {fileID: 0}
   invulnPeriod: 0
 --- !u!114 &1161474029
 MonoBehaviour:
@@ -2698,6 +2789,19 @@ MonoBehaviour:
   bulletPrefab: {fileID: 1949076673984150, guid: cf33a6b330a23e943acf236effa11243,
     type: 2}
   fireDelay: 1
+--- !u!114 &1161474030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1161474022}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 385109c295c303c459924838ed61bf0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ExplosionGo: {fileID: 1119533763840070, guid: 9fdf3930d7eba5c48871264a4dfd8a2c,
+    type: 2}
 --- !u!1 &1178552614
 GameObject:
   m_ObjectHideFlags: 0
@@ -2741,6 +2845,7 @@ GameObject:
   - component: {fileID: 1193087965}
   - component: {fileID: 1193087964}
   - component: {fileID: 1193087963}
+  - component: {fileID: 1193087969}
   m_Layer: 9
   m_Name: Bee Right apart
   m_TagString: Untagged
@@ -2891,7 +2996,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 1
-  explosion: {fileID: 0}
   invulnPeriod: 0
 --- !u!114 &1193087968
 MonoBehaviour:
@@ -2907,6 +3011,19 @@ MonoBehaviour:
   bulletPrefab: {fileID: 1949076673984150, guid: cf33a6b330a23e943acf236effa11243,
     type: 2}
   fireDelay: 1
+--- !u!114 &1193087969
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1193087961}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 385109c295c303c459924838ed61bf0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ExplosionGo: {fileID: 1119533763840070, guid: 9fdf3930d7eba5c48871264a4dfd8a2c,
+    type: 2}
 --- !u!1 &1225760521
 GameObject:
   m_ObjectHideFlags: 0
@@ -3346,6 +3463,7 @@ GameObject:
   - component: {fileID: 1389639544}
   - component: {fileID: 1389639543}
   - component: {fileID: 1389639542}
+  - component: {fileID: 1389639548}
   m_Layer: 9
   m_Name: Bee Left 1 (1)
   m_TagString: Untagged
@@ -3492,7 +3610,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 1
-  explosion: {fileID: 0}
   invulnPeriod: 0
 --- !u!114 &1389639547
 MonoBehaviour:
@@ -3508,6 +3625,19 @@ MonoBehaviour:
   bulletPrefab: {fileID: 1949076673984150, guid: cf33a6b330a23e943acf236effa11243,
     type: 2}
   fireDelay: 1
+--- !u!114 &1389639548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1389639540}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 385109c295c303c459924838ed61bf0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ExplosionGo: {fileID: 1119533763840070, guid: 9fdf3930d7eba5c48871264a4dfd8a2c,
+    type: 2}
 --- !u!1 &1399346808
 GameObject:
   m_ObjectHideFlags: 0
@@ -4329,6 +4459,7 @@ GameObject:
   - component: {fileID: 1959637820}
   - component: {fileID: 1959637819}
   - component: {fileID: 1959637818}
+  - component: {fileID: 1959637824}
   m_Layer: 9
   m_Name: Blue Bee Across (1)
   m_TagString: Untagged
@@ -4484,7 +4615,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 1
-  explosion: {fileID: 0}
   invulnPeriod: 0
 --- !u!114 &1959637823
 MonoBehaviour:
@@ -4500,6 +4630,19 @@ MonoBehaviour:
   bulletPrefab: {fileID: 1949076673984150, guid: cf33a6b330a23e943acf236effa11243,
     type: 2}
   fireDelay: 1
+--- !u!114 &1959637824
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1959637816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 385109c295c303c459924838ed61bf0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ExplosionGo: {fileID: 1119533763840070, guid: 9fdf3930d7eba5c48871264a4dfd8a2c,
+    type: 2}
 --- !u!1 &1977709896
 GameObject:
   m_ObjectHideFlags: 0
@@ -4515,6 +4658,7 @@ GameObject:
   - component: {fileID: 1977709900}
   - component: {fileID: 1977709899}
   - component: {fileID: 1977709898}
+  - component: {fileID: 1977709904}
   m_Layer: 9
   m_Name: Blue Bee Across
   m_TagString: Untagged
@@ -4670,7 +4814,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 1
-  explosion: {fileID: 0}
   invulnPeriod: 0
 --- !u!114 &1977709903
 MonoBehaviour:
@@ -4686,6 +4829,19 @@ MonoBehaviour:
   bulletPrefab: {fileID: 1949076673984150, guid: cf33a6b330a23e943acf236effa11243,
     type: 2}
   fireDelay: 1
+--- !u!114 &1977709904
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1977709896}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 385109c295c303c459924838ed61bf0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ExplosionGo: {fileID: 1119533763840070, guid: 9fdf3930d7eba5c48871264a4dfd8a2c,
+    type: 2}
 --- !u!1 &2013488315
 GameObject:
   m_ObjectHideFlags: 0

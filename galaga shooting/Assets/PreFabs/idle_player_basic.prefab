@@ -124,7 +124,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 1
-  explosion: {fileID: 0}
   invulnPeriod: 0
 --- !u!114 &114871229267704564
 MonoBehaviour:
