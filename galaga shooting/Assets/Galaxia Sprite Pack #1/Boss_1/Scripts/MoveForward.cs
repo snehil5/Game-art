@@ -8,7 +8,8 @@ public class MoveForward : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		Vector3 pos = transform.position;
+
+        Vector3 pos = transform.position * -1f;
 
 		Vector3 velocity = new Vector3 (0,  maxSpeed * Time.deltaTime, 0);
 		pos += transform.rotation * velocity;
@@ -18,8 +19,8 @@ public class MoveForward : MonoBehaviour {
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Enemy")) { 
-            Debug.Log("I AM HITTING TEH BOSS");
+        if (other.CompareTag("Player")) { 
+            Debug.Log("I AM HITTING THE PLAYER");
         }
     }
 

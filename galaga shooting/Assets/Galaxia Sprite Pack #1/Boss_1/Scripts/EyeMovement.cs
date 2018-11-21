@@ -9,7 +9,7 @@ public class EyeMovement : MonoBehaviour
     private Vector3 currentPos;
     private Vector3 moveDirection;
     private float eyeSpeed;
-
+    
     // Use this for initialization
     void Start()
     {
@@ -23,6 +23,7 @@ public class EyeMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
         var angle = Mathf.Atan2(moveDirection.y, moveDirection.x) * Mathf.Rad2Deg;
         transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
         transform.position += moveDirection * eyeSpeed * Time.deltaTime;

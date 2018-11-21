@@ -6,6 +6,18 @@ public class EyeHealth : MonoBehaviour {
     public int health;
     public Animator eyeanim;
     public GameObject destroyeffect;
+    public GameObject BOSS;
+    public GameObject poppedeye;
+    public int atbosshp;
+    BossHealth bosshp;
+    
+
+    void Start()
+    {
+        BOSS = GameObject.Find("Boss1");
+        bosshp = BOSS.GetComponent<BossHealth>();
+    }
+
 
     public void TakeDamage(int damage)
     {
@@ -15,10 +27,20 @@ public class EyeHealth : MonoBehaviour {
 
     void Update()
     {
-        if (health <= 0)
+        
+
+        if (bosshp.health <= atbosshp)
+        {
+            Debug.Log("PRING BOSS HP" + bosshp.health);
+            Instantiate(poppedeye, transform.position, transform.rotation);
+            Destroy(gameObject);
+
+        }else if (health <= 0)
         {
             DestroyEye();
         }
+
+
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -30,11 +52,17 @@ public class EyeHealth : MonoBehaviour {
         }
     }
 
+    void Popout()
+    {
+        
+    }
+
     void DestroyEye()
     {
         Destroy(Instantiate(destroyeffect, transform.position, Quaternion.identity), 1.0f);
         Destroy(gameObject);
     }
+
 
 
 
