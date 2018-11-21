@@ -46,9 +46,7 @@ public class EnemySpawnerLvl2 : MonoBehaviour {
 
     void ScheduleNextEnemySpawn()
     {
-        
         Invoke("SpawnEnemy", maxSpawnSec);
-
     }
     
     

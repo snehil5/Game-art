@@ -7,7 +7,7 @@ public class PlayerSpawner : MonoBehaviour {
     public GameObject playerPrefab;
     public GameObject retry;
     public GameObject mainMenu;
-
+    public GameObject live1, live2, live3;
     GameObject playerInstance;
 
     public int numLives = 3;
@@ -60,6 +60,30 @@ public class PlayerSpawner : MonoBehaviour {
             {
                 SpawnPlayer();
             }
+        }
+        switch (numLives)
+        {
+            case 3:
+                live1.gameObject.SetActive(true);
+                live2.gameObject.SetActive(true);
+                live3.gameObject.SetActive(true);
+                break;
+            case 2:
+                live1.gameObject.SetActive(true);
+                live2.gameObject.SetActive(true);
+                live3.gameObject.SetActive(false);
+                break;
+
+            case 1:
+                live1.gameObject.SetActive(true);
+                live2.gameObject.SetActive(false);
+                live3.gameObject.SetActive(false);
+                break;
+            case 0:
+                live1.gameObject.SetActive(false);
+                live2.gameObject.SetActive(false);
+                live3.gameObject.SetActive(false);
+                break;
         }
 	}
 

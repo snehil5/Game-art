@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class destroybycontact : MonoBehaviour {
-
+    public GameObject ExplosionGo; // explosion
     private void OnTriggerEnter(Collider other)
     {
         
@@ -11,7 +11,13 @@ public class destroybycontact : MonoBehaviour {
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
+        PlayExplosion();
         Destroy(gameObject);
         Destroy(other.gameObject);
+    }
+    void PlayExplosion()
+    {
+        GameObject explosion = (GameObject)Instantiate(ExplosionGo);
+        explosion.transform.position = transform.position;
     }
 }

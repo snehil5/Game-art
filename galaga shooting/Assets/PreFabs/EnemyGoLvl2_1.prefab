@@ -121,7 +121,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 1
-  explosion: {fileID: 0}
+  explosion: {fileID: 1119533763840070, guid: 9fdf3930d7eba5c48871264a4dfd8a2c, type: 2}
   invulnPeriod: 0
 --- !u!114 &114265134129030238
 MonoBehaviour:
@@ -134,6 +134,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 385109c295c303c459924838ed61bf0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ExplosionGo: {fileID: 1278752239827694, guid: f7abd1400df72674681b744391882742,
+    type: 2}
 --- !u!114 &114581094651833890
 MonoBehaviour:
   m_ObjectHideFlags: 1
