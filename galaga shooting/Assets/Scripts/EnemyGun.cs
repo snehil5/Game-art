@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class EnemyGun : MonoBehaviour {
-
+    
+    public float startshooting;
+    private float shootTime;
     public GameObject EnemyBulletfab;
 	// Use this for initialization
 	void Start () {
@@ -12,7 +14,18 @@ public class EnemyGun : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-         FireEnemyBullet();
+
+        shootTime -= Time.deltaTime;
+
+        if (shootTime <= 0)
+        {
+            shootTime = startshooting;
+            FireEnemyBullet();
+
+        } else
+        {
+
+        }
        
     }
 
