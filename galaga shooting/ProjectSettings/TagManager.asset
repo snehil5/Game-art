@@ -8,6 +8,7 @@ TagManager:
   - Asteroid2
   - bullet
   - explosion
+  - EnemyBullet
   layers:
   - Default
   - TransparentFX
