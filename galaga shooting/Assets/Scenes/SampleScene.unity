@@ -4168,6 +4168,7 @@ MonoBehaviour:
   live1: {fileID: 2059837377}
   live2: {fileID: 1540996539}
   live3: {fileID: 1379431462}
+  invulnPeriod: 3
   numLives: 3
   score: 0
   count: 0
