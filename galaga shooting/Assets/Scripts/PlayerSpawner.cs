@@ -10,6 +10,9 @@ public class PlayerSpawner : MonoBehaviour {
     public GameObject live1, live2, live3;
     GameObject playerInstance;
 
+    public float invulnPeriod = 0;
+    float invulnTimer = 0;
+
     public int numLives = 3;
     public int score;
     float timeLeft;
@@ -27,6 +30,11 @@ public class PlayerSpawner : MonoBehaviour {
         numLives--;
         respawnTimer = 1;
         playerInstance = (GameObject)Instantiate(playerPrefab, transform.position, Quaternion.identity);
+        if (invulnPeriod > 0)
+        {
+            invulnTimer = invulnPeriod;
+            playerInstance.layer = 10;
+        }
     }
 
     public void AddScore(int newScore)
@@ -43,7 +51,17 @@ public class PlayerSpawner : MonoBehaviour {
     // Update is called once per frame
     void Update () {
 
-        if(score >= 115 ) {
+        if (invulnTimer > 0)
+        {
+            invulnTimer -= Time.deltaTime;
+            StartCoroutine(Flash(0.1f, playerInstance));
+            if (invulnTimer <= 0)
+            {
+                playerInstance.layer = 8;
+            }
+        }
+
+        if (score >= 115 ) {
             
             timeLeft -= Time.deltaTime;
             if (timeLeft < 0)
@@ -105,6 +123,23 @@ public class PlayerSpawner : MonoBehaviour {
     {
         return score;
     }
-    
+
+    IEnumerator Flash(float x, GameObject player)
+    {
+        for (int i = 0; i < 10; i++)
+        {
+            if (player)
+            {
+                player.GetComponent<SpriteRenderer>().enabled = false;
+                yield return new WaitForSeconds(x);
+            }
+            if (player)
+            {
+                player.GetComponent<SpriteRenderer>().enabled = true;
+                yield return new WaitForSeconds(x);
+            }
+        }
+    }
+
 }
     
