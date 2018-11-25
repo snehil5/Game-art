@@ -6,12 +6,7 @@ using UnityEngine.SceneManagement;
 public class destroybycontact : MonoBehaviour {
     PlayerSpawner spwn;
     public GameObject ExplosionGo; // explosion
-                                   // private void OnTriggerEnter(Collider other)
-                                   // {
-
-    //   Destroy(gameObject);
-    //}
-
+    public GameObject DropItem1;
     private void Start()
     {
         GameObject spwnObject = GameObject.FindWithTag("Respawn");
@@ -41,10 +36,12 @@ public class destroybycontact : MonoBehaviour {
             spwn.AddScore(10);
         }
         
+
     }
     void PlayExplosion()
     {
         GameObject explosion = (GameObject)Instantiate(ExplosionGo);
         explosion.transform.position = transform.position;
+        
     }
 }
