@@ -13,17 +13,18 @@ public class EyeMovement : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+        player = GameObject.Find("Player");
         currentPos = transform.position;
         playerPosition = player.transform.position;
         moveDirection = (playerPosition - currentPos).normalized;
         
-        eyeSpeed = 6.0f;
+        eyeSpeed = 7.0f;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        player = GameObject.Find("Player");
         var angle = Mathf.Atan2(moveDirection.y, moveDirection.x) * Mathf.Rad2Deg;
         transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
         transform.position += moveDirection * eyeSpeed * Time.deltaTime;
