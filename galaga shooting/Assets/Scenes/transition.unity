@@ -377,11 +377,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4960078394386606, guid: 283fc31be9bb4da46af2e7424aabe0d3, type: 2}
       propertyPath: m_LocalScale.x
-      value: 2
+      value: 0.23
       objectReference: {fileID: 0}
     - target: {fileID: 4960078394386606, guid: 283fc31be9bb4da46af2e7424aabe0d3, type: 2}
       propertyPath: m_LocalScale.y
-      value: 2
+      value: 0.15
       objectReference: {fileID: 0}
     - target: {fileID: 4960078394386606, guid: 283fc31be9bb4da46af2e7424aabe0d3, type: 2}
       propertyPath: m_LocalScale.z
