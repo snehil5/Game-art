@@ -121,7 +121,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 1
-  explosion: {fileID: 1119533763840070, guid: 9fdf3930d7eba5c48871264a4dfd8a2c, type: 2}
   invulnPeriod: 0
 --- !u!114 &114265134129030238
 MonoBehaviour:

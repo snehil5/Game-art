@@ -13,7 +13,7 @@ public class PlayerSpawner : MonoBehaviour {
     public float invulnPeriod = 0;
     float invulnTimer = 0;
 
-    public int numLives = 3;
+    static public int numLives = 3;
     public int score;
     float timeLeft;
     float respawnTimer;
@@ -22,8 +22,22 @@ public class PlayerSpawner : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         score = 0;
-        SpawnPlayer();
+        Scene currentScene = SceneManager.GetActiveScene();
+        if (currentScene.name == "SampleScene")
+        {
+            SpawnPlayer();
+        }
+        else
+        {
+            TransportPlayer();
+        }
 	}
+
+    void TransportPlayer()
+    {
+        respawnTimer = 1;
+        playerInstance = (GameObject)Instantiate(playerPrefab, transform.position, Quaternion.identity);
+    }
 
     void SpawnPlayer()
     {
