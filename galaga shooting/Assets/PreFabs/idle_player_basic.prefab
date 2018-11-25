@@ -25,6 +25,7 @@ GameObject:
   - component: {fileID: 114871229267704564}
   - component: {fileID: 50701993932999352}
   - component: {fileID: 60164476396334066}
+  - component: {fileID: 114899968021865310}
   m_Layer: 8
   m_Name: idle_player_basic
   m_TagString: Player
@@ -136,6 +137,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6749e51e9194d844cb4467371719e17a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114899968021865310
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1634919933007590}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 385109c295c303c459924838ed61bf0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ExplosionGo: {fileID: 1119533763840070, guid: 9fdf3930d7eba5c48871264a4dfd8a2c,
+    type: 2}
 --- !u!212 &212361619807468400
 SpriteRenderer:
   m_ObjectHideFlags: 1

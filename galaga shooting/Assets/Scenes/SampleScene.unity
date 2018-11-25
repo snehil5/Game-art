@@ -2153,7 +2153,7 @@ GameObject:
   - component: {fileID: 1020149310}
   - component: {fileID: 1020149309}
   m_Layer: 0
-  m_Name: score
+  m_Name: scoreUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4243,7 +4243,6 @@ MonoBehaviour:
   live2: {fileID: 1540996539}
   live3: {fileID: 1379431462}
   invulnPeriod: 3
-  numLives: 3
   score: 0
   count: 0
 --- !u!4 &1682243758
@@ -4502,7 +4501,7 @@ GameObject:
   - component: {fileID: 1798421764}
   - component: {fileID: 1798421763}
   m_Layer: 0
-  m_Name: time
+  m_Name: timeUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
