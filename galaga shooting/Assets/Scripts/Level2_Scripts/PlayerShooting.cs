@@ -31,14 +31,14 @@ public class PlayerShootings : MonoBehaviour {
 			cooldownTimer = fireDelay;
             if (Input.GetButton("Fire1") && cooldownTimer <= 0)
             {
-                //Audio.PlaySound("shooting");
+                Audio.PlaySound("shooting");
 
-                cooldownTimer = fireDelay;
+               // cooldownTimer = fireDelay;
 
                 if (shootinglvl == 0)
                 {
-                    Instantiate(bulletPrefab, p2.position, p2.rotation);
-                    Instantiate(bulletPrefab, p3.position, p3.rotation);
+                    //  Instantiate(bulletPrefab, p2.position, p2.rotation);
+                    Instantiate(bulletPrefab, transform.position, transform.rotation);
                 }
 
                 if (shootinglvl == 1)
@@ -67,7 +67,7 @@ public class PlayerShootings : MonoBehaviour {
                     Instantiate(bulletPrefab, p7.position, p7.rotation);
                 }
             }
-            Instantiate (bulletPrefab, transform.position, transform.rotation);
+           // Instantiate (bulletPrefab, transform.position, transform.rotation);
 		}
 	}
     private void OnTriggerEnter2D(Collider2D collision)

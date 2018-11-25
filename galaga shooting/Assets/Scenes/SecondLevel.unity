@@ -984,6 +984,10 @@ MonoBehaviour:
   enemyGo: {fileID: 1924415849873080, guid: 8b6d6703cbca2ba41954e4fbc9830626, type: 2}
   asteroid1: {fileID: 1640925199434858, guid: c922dde9fc91ba14fb0848954f428c91, type: 2}
   asteroid2: {fileID: 1566081019654696, guid: 778441833c71afd45bc550ef0a914ebe, type: 2}
+  hazardCount: 20
+  spawnWait: 2
+  startWait: 2
+  waveWait: 3
 --- !u!4 &1552571881
 Transform:
   m_ObjectHideFlags: 0

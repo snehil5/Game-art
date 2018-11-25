@@ -356,6 +356,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   powerTime: 30
+  powerTimer: 0
+  Timer: {fileID: 0}
   bulletPrefab: {fileID: 1949076673984150, guid: 7f9e7506878970549921dfeb9cd52f74,
     type: 2}
   p1: {fileID: 4166451738333588}
@@ -366,7 +368,8 @@ MonoBehaviour:
   p6: {fileID: 4516859371075022}
   p7: {fileID: 4688993660351044}
   shootinglvl: 0
-  fireDelay: 0.05
+  fireDelay: 0.25
+  cooldownTimer: 0
 --- !u!114 &114421174330811926
 MonoBehaviour:
   m_ObjectHideFlags: 1

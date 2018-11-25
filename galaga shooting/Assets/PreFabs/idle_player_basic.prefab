@@ -21,8 +21,8 @@ GameObject:
   - component: {fileID: 4960078394386606}
   - component: {fileID: 212361619807468400}
   - component: {fileID: 114695675668066466}
-  - component: {fileID: 114154150515609526}
   - component: {fileID: 114871229267704564}
+  - component: {fileID: 114959447621312242}
   - component: {fileID: 50701993932999352}
   - component: {fileID: 60164476396334066}
   - component: {fileID: 114899968021865310}
@@ -99,20 +99,6 @@ PolygonCollider2D:
       - {x: 0.14, y: -0.099999994}
       - {x: 0.14999999, y: -0.07}
       - {x: 0.14999999, y: 0}
---- !u!114 &114154150515609526
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1634919933007590}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cdafefe9a393a3b41a8dc17033469434, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 1949076673984150, guid: 7f9e7506878970549921dfeb9cd52f74,
-    type: 2}
-  fireDelay: 0.25
 --- !u!114 &114695675668066466
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -150,6 +136,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ExplosionGo: {fileID: 1119533763840070, guid: 9fdf3930d7eba5c48871264a4dfd8a2c,
     type: 2}
+--- !u!114 &114959447621312242
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1634919933007590}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac1acefaa8697bf4dabcc8a95924e2ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletPrefab: {fileID: 1949076673984150, guid: 7f9e7506878970549921dfeb9cd52f74,
+    type: 2}
+  fireDelay: 0.25
 --- !u!212 &212361619807468400
 SpriteRenderer:
   m_ObjectHideFlags: 1
