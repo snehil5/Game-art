@@ -8,6 +8,8 @@ public class PlayerShooting2 : MonoBehaviour
     public int powerTime;
     private int powerTimer = 0;
     private Count Timer;
+    private DamageHandler player;
+
 
     public GameObject bulletPrefab;
     public Transform p1, p2, p3, p4, p5, p6, p7;
@@ -18,6 +20,7 @@ public class PlayerShooting2 : MonoBehaviour
 
     private void Start()
     {
+        player = gameObject.GetComponent<DamageHandler>();
         Timer = gameObject.GetComponent<Count>();
         StartCoroutine(StartCountdown(powerTime));
         shootinglvl = 0;
@@ -39,12 +42,15 @@ public class PlayerShooting2 : MonoBehaviour
 
             if (shootinglvl == 0)
             {
+                Audio.PlaySound("shooting");
                 Instantiate(bulletPrefab, p2.position, p2.rotation);
                 Instantiate(bulletPrefab, p3.position, p3.rotation);
             }
 
             if (shootinglvl == 1)
             {
+                Audio.PlaySound("shooting");
+                Audio.PlaySound("shooting");
                 Instantiate(bulletPrefab, p1.position, p1.rotation);
                 Instantiate(bulletPrefab, p2.position, p2.rotation);
                 Instantiate(bulletPrefab, p3.position, p3.rotation);
@@ -98,7 +104,15 @@ public class PlayerShooting2 : MonoBehaviour
         if (powerTimer > powerTime)
             powerTimer = powerTime;
 
+        //reset power up if player dies
+        if(player.health <= 0)
+        {
+            powerTimer = 0;
+        }
+
     }
+
+
 
 
     public IEnumerator StartCountdown(int powerTime)

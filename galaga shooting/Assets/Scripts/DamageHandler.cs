@@ -95,6 +95,7 @@ public class DamageHandler : MonoBehaviour {
                 Instantiate(droptop, transform.position, Quaternion.identity);
             }
             spwn.AddScore(5);
+            Audio.PlaySound("Explosion");
             Die();
         }
     }
