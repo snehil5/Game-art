@@ -10,7 +10,7 @@ public class EyeHealth : MonoBehaviour {
     public GameObject poppedeye;
     public int atbosshp;
     BossHealth bosshp;
-    
+    public GameObject chargingobject;
 
     void Start()
     {
@@ -34,6 +34,7 @@ public class EyeHealth : MonoBehaviour {
             Debug.Log("PRING BOSS HP" + bosshp.health);
             Instantiate(poppedeye, transform.position, transform.rotation);
             Destroy(gameObject);
+            Destroy(chargingobject);
 
         }else if (health <= 0)
         {
@@ -50,17 +51,16 @@ public class EyeHealth : MonoBehaviour {
             Debug.Log("The bullet is hurting me");
             eyeanim.SetTrigger("hurt");
         }
+
     }
 
-    void Popout()
-    {
-        
-    }
+
 
     void DestroyEye()
     {
         Destroy(Instantiate(destroyeffect, transform.position, Quaternion.identity), 1.0f);
         Destroy(gameObject);
+        Destroy(chargingobject);
     }
 
 

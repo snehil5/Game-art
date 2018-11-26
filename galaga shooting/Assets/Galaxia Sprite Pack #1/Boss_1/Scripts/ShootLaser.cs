@@ -8,15 +8,19 @@ public class ShootLaser : MonoBehaviour {
     public float shootdelay;
     float timebetweenattack = 5.0f;
     public Animator eyeanimator;
-    public GameObject lasercharge;
-	
-	// Update is called once per frame
-	void Update () {
-        timebetweenattack -= Time.deltaTime;
+   
 
+
+
+    
+    // Update is called once per frame
+    void Update () {
+        timebetweenattack -= Time.deltaTime;
+       
         Vector3 laserposition = new Vector3(transform.position.x, transform.position.y -1.5f, transform.position.z);
         
-
+        
+      
         if (timebetweenattack <= 0)
         {
             eyeanimator.SetTrigger("shoot");
@@ -24,6 +28,7 @@ public class ShootLaser : MonoBehaviour {
             timebetweenattack = shootdelay;
 
             Instantiate(laserprefab, laserposition, transform.rotation);
+           
 
         }
        

@@ -28,6 +28,7 @@ public class Laser : MonoBehaviour {
         if (other.CompareTag("Player"))
         {
             Debug.Log("Hitting the player");
+            DestroyProjectile();
         }
     }
 

@@ -7,8 +7,6 @@ public class BossHealth : MonoBehaviour {
     public Animator bossanim;
     
 
-    
- 
     public void TakeDamage(int damage)
     {
         health -= damage;

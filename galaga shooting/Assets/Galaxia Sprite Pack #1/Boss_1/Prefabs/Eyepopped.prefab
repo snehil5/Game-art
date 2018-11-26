@@ -20,9 +20,10 @@ GameObject:
   m_Component:
   - component: {fileID: 4139203432282250}
   - component: {fileID: 114540809506384040}
+  - component: {fileID: 58252323156527258}
   m_Layer: 0
   m_Name: Eyepopped
-  m_TagString: Untagged
+  m_TagString: Eye
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -55,7 +56,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1565928591596394}
   m_LocalRotation: {x: -0, y: -0, z: -0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -6.02, y: 1.87, z: 0}
+  m_LocalPosition: {x: 6.44, y: -1, z: 0}
   m_LocalScale: {x: 0.8915915, y: 1.1341928, z: 1}
   m_Children:
   - {fileID: 4383358190189834}
@@ -107,9 +108,24 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0000009536742, y: -0.19702196}
+  m_Offset: {x: 0.007714674, y: -0.21680415}
   serializedVersion: 2
-  m_Radius: 0.5729781
+  m_Radius: 0.50703704
+--- !u!58 &58252323156527258
+CircleCollider2D:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1565928591596394}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.32882074, y: 0.07627442}
+  serializedVersion: 2
+  m_Radius: 0.35168764
 --- !u!95 &95308979091837146
 Animator:
   serializedVersion: 3
@@ -157,7 +173,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a9063f739af1bf4eab937940c02fa60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 1856374666456876, guid: ef8f728bcc035bf4aa7fded74d350864, type: 2}
+  destroyeffect: {fileID: 1746700808708016, guid: 3e39abebe0df60c49b29589f3bf20150,
+    type: 2}
 --- !u!114 &114904219906613208
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -173,7 +190,6 @@ MonoBehaviour:
     type: 2}
   shootdelay: 10
   eyeanimator: {fileID: 95308979091837146}
-  lasercharge: {fileID: 0}
 --- !u!212 &212895292876781562
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class EyeMovement : MonoBehaviour
 {
-    public GameObject player;
+    private GameObject player;
     private Vector3 playerPosition;
     private Vector3 currentPos;
     private Vector3 moveDirection;
     private float eyeSpeed;
+    public GameObject destroyeffect;
     
     // Use this for initialization
     void Start()
@@ -18,7 +19,7 @@ public class EyeMovement : MonoBehaviour
         playerPosition = player.transform.position;
         moveDirection = (playerPosition - currentPos).normalized;
         
-        eyeSpeed = 7.0f;
+        eyeSpeed = 5.5f;
     }
 
     // Update is called once per frame
@@ -56,6 +57,19 @@ public class EyeMovement : MonoBehaviour
             transform.LookAt(playerPosition);
             moveDirection = (playerPosition - currentPos).normalized;
         }
-        
+
+      
+
+    }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+
+        if (other.CompareTag("Player"))
+        {
+            Debug.Log("KAMIKAZE");
+            Destroy(Instantiate(destroyeffect, transform.position, Quaternion.identity), 1.0f);
+            Destroy(gameObject);
+        }
     }
 }
