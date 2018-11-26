@@ -23,6 +23,7 @@ public class EnemySpawnerLvl2 : MonoBehaviour
     int i = 0;
     int j = 0;
     int totalWave = 3;
+    int miniCount = 2;
     // Use this for initialization
     void Start()
     {
@@ -44,7 +45,7 @@ public class EnemySpawnerLvl2 : MonoBehaviour
     IEnumerator SpawnWaves()
     {
         yield return new WaitForSeconds(startWait);
-        hazardCount = 10;
+        hazardCount = 5;
         spawnWait = 1.5f;
         while (i < hazardCount)
         {
@@ -75,7 +76,7 @@ public class EnemySpawnerLvl2 : MonoBehaviour
             Debug.Log(hazardCount + " is the needed");
             yield return new WaitForSeconds(spawnWait);
         }
-        hazardCount = 15;
+        hazardCount = 5;
         yield return new WaitForSeconds(waveWait);
         i = 0;
         spawnWait = 1.5f;
@@ -110,6 +111,26 @@ public class EnemySpawnerLvl2 : MonoBehaviour
             Debug.Log(hazardCount + " is the needed");
             yield return new WaitForSeconds(spawnWait);
         }
+
+        yield return new WaitForSeconds(waveWait);
+        i = 0;
+ 
+        for(i = 0; i < miniCount; ++i)
+        {
+            Vector2 min4 = Camera.main.ViewportToWorldPoint(new Vector2(.2f, 0));
+            Vector2 max4 = Camera.main.ViewportToWorldPoint(new Vector2(.8f, 1));
+            GameObject miniBoss_ = (GameObject)Instantiate(miniBoss);
+            if (i == 0)
+            {
+                miniBoss_.transform.position = new Vector2(min4.x, max4.y);
+            }
+            else
+            {
+                miniBoss_.transform.position = new Vector2(max4.x, max4.y);
+            }
+        }
+
+        
 
     }
 
