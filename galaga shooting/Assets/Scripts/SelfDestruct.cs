@@ -22,12 +22,13 @@ public class SelfDestruct : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == "Enemy")
+        if (collision.tag == "Enemy" || collision.tag == "miniBoss")
         {
             dam = collision.GetComponent<DamageHandler>();
             dam.hurt();
             Destroy(Instantiate(deathFX, transform.position, transform.rotation), .2f);
             Destroy(gameObject);
         }
+
     }
 }
