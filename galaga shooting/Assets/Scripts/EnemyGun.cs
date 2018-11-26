@@ -9,7 +9,7 @@ public class EnemyGun : MonoBehaviour {
     
 
     void Start () {
-       Invoke ("FireEnemyBullet", 0.25f);
+       Invoke("FireEnemyBullet", 1);
 	}
 	
 	// Update is called once per frame
@@ -34,7 +34,7 @@ public class EnemyGun : MonoBehaviour {
             bullet.GetComponent<EnemyBulletOff>().SetDirection(direction);
             }
 
-            
+          Invoke("FireEnemyBullet", 1);  
         }
     }
 
