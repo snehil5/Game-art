@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 60955767667413718}
   - component: {fileID: 50290959134326638}
   - component: {fileID: 114620443885005480}
+  - component: {fileID: 114782222903096994}
   m_Layer: 0
   m_Name: miniBoss
   m_TagString: miniBoss
@@ -31,6 +32,35 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1716020847022438
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4225222184004096}
+  - component: {fileID: 114028389028808862}
+  m_Layer: 0
+  m_Name: EnemyGunGo
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4225222184004096
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1716020847022438}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.28, z: -0.081652656}
+  m_LocalScale: {x: 0.33333334, y: 0.33333334, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4681561854444130}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4681561854444130
 Transform:
   m_ObjectHideFlags: 1
@@ -38,9 +68,10 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1236258475332464}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.33, y: 4.65, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 3, y: 3, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 4225222184004096}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -150,6 +181,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &114028389028808862
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1716020847022438}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8aa596f223641c44e88fc07034f9b199, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EnemyBulletfab: {fileID: 1501213556182860, guid: 67ad454cd0e44ca41865400f55e353c6,
+    type: 2}
 --- !u!114 &114620443885005480
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -161,6 +205,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 503011be97d72ce43867e253871c9141, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114782222903096994
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1236258475332464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14817df635f842945b483bd36e98664d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 25
+  Explosion: {fileID: 1119533763840070, guid: 9fdf3930d7eba5c48871264a4dfd8a2c, type: 2}
+  droptop: {fileID: 0}
+  invulnPeriod: 0
 --- !u!212 &212607355832356806
 SpriteRenderer:
   m_ObjectHideFlags: 1
