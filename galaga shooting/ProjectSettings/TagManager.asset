@@ -13,6 +13,8 @@ TagManager:
   - powerup
   - miniBoss
   - spawning
+  - Eye
+  - boss
   layers:
   - Default
   - TransparentFX
@@ -58,4 +60,7 @@ TagManager:
     locked: 0
   - name: effect
     uniqueID: 4148914223
+    locked: 0
+  - name: pause menu
+    uniqueID: 3337995363
     locked: 0
