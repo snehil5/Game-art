@@ -36,10 +36,11 @@ public class DamageHandler : MonoBehaviour {
     {
         if (gameObject.tag == "Player")
         {
-            if (col.tag == "Enemy")
+            if (col.tag == "Enemy" || col.tag == "boss")
             {
                 health = 0;
             }
+
         }
 
         if (gameObject.tag == "Enemy")
