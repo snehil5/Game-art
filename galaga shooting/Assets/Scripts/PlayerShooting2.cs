@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerShooting : MonoBehaviour
+public class PlayerShooting2 : MonoBehaviour
 {
 
     public int powerTime;
@@ -97,13 +97,13 @@ public class PlayerShooting : MonoBehaviour
         powerTimer += powerTime;
         if (powerTimer > powerTime)
             powerTimer = powerTime;
-            
+
     }
 
 
     public IEnumerator StartCountdown(int powerTime)
     {
-        
+
         while (powerTimer > -1)
         {
 
@@ -113,13 +113,13 @@ public class PlayerShooting : MonoBehaviour
             {
                 powerTimer--;
             }
-            if( powerTimer == 0)
+            if (powerTimer == 0)
             {
                 shootinglvl = 0;
             }
 
         }
-        
+
 
     }
 }

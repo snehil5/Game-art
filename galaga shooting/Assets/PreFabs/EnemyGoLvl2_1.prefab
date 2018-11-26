@@ -25,7 +25,6 @@ GameObject:
   - component: {fileID: 61937898026646828}
   - component: {fileID: 50816598366200132}
   - component: {fileID: 114234162467880718}
-  - component: {fileID: 114866273436014284}
   m_Layer: 0
   m_Name: EnemyGoLvl2_1
   m_TagString: Enemy
@@ -135,18 +134,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 503011be97d72ce43867e253871c9141, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &114866273436014284
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1924415849873080}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0b55aef241d440143bb6071bb9936c33, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dropItem: {fileID: 1537526776279802, guid: 9e01895f399b85a438785ff32f897f6e, type: 2}
 --- !u!212 &212058007020384420
 SpriteRenderer:
   m_ObjectHideFlags: 1

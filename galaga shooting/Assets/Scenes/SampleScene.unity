@@ -417,6 +417,7 @@ GameObject:
   - component: {fileID: 269008615}
   - component: {fileID: 269008614}
   - component: {fileID: 269008620}
+  - component: {fileID: 269008621}
   m_Layer: 9
   m_Name: Bee_enemy_Fomation B (2)
   m_TagString: Untagged
@@ -433,7 +434,7 @@ Transform:
   m_GameObject: {fileID: 269008612}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -3.31, y: 8.89, z: 0.03606322}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
+  m_LocalScale: {x: 2.5, y: 2.5, z: 1}
   m_Children: []
   m_Father: {fileID: 311712659}
   m_RootOrder: 2
@@ -483,7 +484,7 @@ BoxCollider2D:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 269008612}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
@@ -493,7 +494,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.41, y: 0.35}
+    oldSize: {x: 0.29, y: 0.18}
     newSize: {x: 0.14, y: 0.2}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -538,7 +539,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 994e3df87107e704c9688ed2fac544a2, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5f5198919fc70174bb72283a045d6380, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -590,6 +591,39 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ExplosionGo: {fileID: 1119533763840070, guid: 9fdf3930d7eba5c48871264a4dfd8a2c,
     type: 2}
+  DropItem1: {fileID: 0}
+--- !u!60 &269008621
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 269008612}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.29, y: 0.18}
+    newSize: {x: 0.14, y: 0.2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.114999995, y: 0.089999996}
+      - {x: -0.145, y: 0.049999997}
+      - {x: -0.145, y: -0.07}
+      - {x: -0.105, y: -0.089999996}
+      - {x: 0.085, y: -0.089999996}
+      - {x: 0.145, y: -0.07}
+      - {x: 0.145, y: 0.03}
+      - {x: 0.105, y: 0.089999996}
 --- !u!1 &311712658
 GameObject:
   m_ObjectHideFlags: 0
@@ -639,6 +673,7 @@ GameObject:
   - component: {fileID: 316146773}
   - component: {fileID: 316146772}
   - component: {fileID: 316146778}
+  - component: {fileID: 316146779}
   m_Layer: 9
   m_Name: Bee Left 1 (4)
   m_TagString: Untagged
@@ -655,7 +690,7 @@ Transform:
   m_GameObject: {fileID: 316146770}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -1.8, y: 8.21, z: 0.061523438}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
+  m_LocalScale: {x: 2.5, y: 2.5, z: 1}
   m_Children: []
   m_Father: {fileID: 1661738997}
   m_RootOrder: 4
@@ -706,7 +741,7 @@ BoxCollider2D:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 316146770}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
@@ -716,7 +751,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.41, y: 0.35}
+    oldSize: {x: 0.29, y: 0.18}
     newSize: {x: 0.14, y: 0.2}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -761,7 +796,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 994e3df87107e704c9688ed2fac544a2, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5f5198919fc70174bb72283a045d6380, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -813,6 +848,39 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ExplosionGo: {fileID: 1119533763840070, guid: 9fdf3930d7eba5c48871264a4dfd8a2c,
     type: 2}
+  DropItem1: {fileID: 0}
+--- !u!60 &316146779
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 316146770}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.29, y: 0.18}
+    newSize: {x: 0.14, y: 0.2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.114999995, y: 0.089999996}
+      - {x: -0.145, y: 0.049999997}
+      - {x: -0.145, y: -0.07}
+      - {x: -0.105, y: -0.089999996}
+      - {x: 0.085, y: -0.089999996}
+      - {x: 0.145, y: -0.07}
+      - {x: 0.145, y: 0.03}
+      - {x: 0.105, y: 0.089999996}
 --- !u!1 &339493099
 GameObject:
   m_ObjectHideFlags: 0
@@ -1171,6 +1239,7 @@ GameObject:
   - component: {fileID: 651964637}
   - component: {fileID: 651964636}
   - component: {fileID: 651964642}
+  - component: {fileID: 651964643}
   m_Layer: 9
   m_Name: Bee Left 1
   m_TagString: Untagged
@@ -1187,7 +1256,7 @@ Transform:
   m_GameObject: {fileID: 651964634}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -1.79, y: 5.05, z: 0.061523438}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
+  m_LocalScale: {x: 2.5, y: 2.5, z: 1}
   m_Children: []
   m_Father: {fileID: 1661738997}
   m_RootOrder: 0
@@ -1245,7 +1314,7 @@ BoxCollider2D:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 651964634}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
@@ -1255,7 +1324,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.41, y: 0.35}
+    oldSize: {x: 0.29, y: 0.18}
     newSize: {x: 0.14, y: 0.2}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -1300,7 +1369,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 994e3df87107e704c9688ed2fac544a2, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5f5198919fc70174bb72283a045d6380, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1352,6 +1421,39 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ExplosionGo: {fileID: 1119533763840070, guid: 9fdf3930d7eba5c48871264a4dfd8a2c,
     type: 2}
+  DropItem1: {fileID: 0}
+--- !u!60 &651964643
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 651964634}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.29, y: 0.18}
+    newSize: {x: 0.14, y: 0.2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.114999995, y: 0.089999996}
+      - {x: -0.145, y: 0.049999997}
+      - {x: -0.145, y: -0.07}
+      - {x: -0.105, y: -0.089999996}
+      - {x: 0.085, y: -0.089999996}
+      - {x: 0.145, y: -0.07}
+      - {x: 0.145, y: 0.03}
+      - {x: 0.105, y: 0.089999996}
 --- !u!1 &677883233
 GameObject:
   m_ObjectHideFlags: 0
@@ -1740,6 +1842,7 @@ GameObject:
   - component: {fileID: 890691698}
   - component: {fileID: 890691697}
   - component: {fileID: 890691703}
+  - component: {fileID: 890691704}
   m_Layer: 9
   m_Name: Bee Left 1 (2)
   m_TagString: Untagged
@@ -1756,7 +1859,7 @@ Transform:
   m_GameObject: {fileID: 890691695}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -1.68, y: 6.26, z: 0.061523438}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
+  m_LocalScale: {x: 2.5, y: 2.5, z: 1}
   m_Children: []
   m_Father: {fileID: 1661738997}
   m_RootOrder: 2
@@ -1814,7 +1917,7 @@ BoxCollider2D:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 890691695}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
@@ -1824,7 +1927,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.41, y: 0.35}
+    oldSize: {x: 0.29, y: 0.18}
     newSize: {x: 0.14, y: 0.2}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -1869,7 +1972,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 994e3df87107e704c9688ed2fac544a2, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5f5198919fc70174bb72283a045d6380, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1921,6 +2024,39 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ExplosionGo: {fileID: 1119533763840070, guid: 9fdf3930d7eba5c48871264a4dfd8a2c,
     type: 2}
+  DropItem1: {fileID: 0}
+--- !u!60 &890691704
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 890691695}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.29, y: 0.18}
+    newSize: {x: 0.14, y: 0.2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.114999995, y: 0.089999996}
+      - {x: -0.145, y: 0.049999997}
+      - {x: -0.145, y: -0.07}
+      - {x: -0.105, y: -0.089999996}
+      - {x: 0.085, y: -0.089999996}
+      - {x: 0.145, y: -0.07}
+      - {x: 0.145, y: 0.03}
+      - {x: 0.105, y: 0.089999996}
 --- !u!1 &907950452
 GameObject:
   m_ObjectHideFlags: 0
@@ -1965,6 +2101,7 @@ GameObject:
   - component: {fileID: 914641628}
   - component: {fileID: 914641627}
   - component: {fileID: 914641633}
+  - component: {fileID: 914641634}
   m_Layer: 9
   m_Name: Bee Right apart (1)
   m_TagString: Untagged
@@ -1981,7 +2118,7 @@ Transform:
   m_GameObject: {fileID: 914641625}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -3.43, y: 10.92, z: 0.03606322}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
+  m_LocalScale: {x: 2.5, y: 2.5, z: 1}
   m_Children: []
   m_Father: {fileID: 311712659}
   m_RootOrder: 4
@@ -2036,7 +2173,7 @@ BoxCollider2D:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 914641625}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
@@ -2046,7 +2183,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.41, y: 0.35}
+    oldSize: {x: 0.29, y: 0.18}
     newSize: {x: 0.14, y: 0.2}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -2091,7 +2228,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 994e3df87107e704c9688ed2fac544a2, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5f5198919fc70174bb72283a045d6380, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2143,6 +2280,39 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ExplosionGo: {fileID: 1119533763840070, guid: 9fdf3930d7eba5c48871264a4dfd8a2c,
     type: 2}
+  DropItem1: {fileID: 0}
+--- !u!60 &914641634
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 914641625}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.29, y: 0.18}
+    newSize: {x: 0.14, y: 0.2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.114999995, y: 0.089999996}
+      - {x: -0.145, y: 0.049999997}
+      - {x: -0.145, y: -0.07}
+      - {x: -0.105, y: -0.089999996}
+      - {x: 0.085, y: -0.089999996}
+      - {x: 0.145, y: -0.07}
+      - {x: 0.145, y: 0.03}
+      - {x: 0.105, y: 0.089999996}
 --- !u!1 &1020149308
 GameObject:
   m_ObjectHideFlags: 0
@@ -2234,6 +2404,7 @@ GameObject:
   - component: {fileID: 1050268091}
   - component: {fileID: 1050268088}
   - component: {fileID: 1050268092}
+  - component: {fileID: 1050268096}
   m_Layer: 9
   m_Name: Bee_enemy_Fomation B
   m_TagString: Untagged
@@ -2266,7 +2437,7 @@ BoxCollider2D:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1050268087}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
@@ -2276,7 +2447,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.41, y: 0.35}
+    oldSize: {x: 0.29, y: 0.18}
     newSize: {x: 0.14, y: 0.2}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -2321,7 +2492,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 994e3df87107e704c9688ed2fac544a2, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5f5198919fc70174bb72283a045d6380, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2365,6 +2536,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ExplosionGo: {fileID: 1119533763840070, guid: 9fdf3930d7eba5c48871264a4dfd8a2c,
     type: 2}
+  DropItem1: {fileID: 0}
 --- !u!114 &1050268093
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2388,7 +2560,7 @@ Transform:
   m_GameObject: {fileID: 1050268087}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -3.31, y: 6.27, z: 0.03606322}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
+  m_LocalScale: {x: 2.5, y: 2.5, z: 1}
   m_Children: []
   m_Father: {fileID: 311712659}
   m_RootOrder: 0
@@ -2407,6 +2579,38 @@ MonoBehaviour:
   bulletPrefab: {fileID: 1949076673984150, guid: cf33a6b330a23e943acf236effa11243,
     type: 2}
   fireDelay: 1
+--- !u!60 &1050268096
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1050268087}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.29, y: 0.18}
+    newSize: {x: 0.14, y: 0.2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.114999995, y: 0.089999996}
+      - {x: -0.145, y: 0.049999997}
+      - {x: -0.145, y: -0.07}
+      - {x: -0.105, y: -0.089999996}
+      - {x: 0.085, y: -0.089999996}
+      - {x: 0.145, y: -0.07}
+      - {x: 0.145, y: 0.03}
+      - {x: 0.105, y: 0.089999996}
 --- !u!1 &1055221885
 GameObject:
   m_ObjectHideFlags: 0
@@ -2451,6 +2655,7 @@ GameObject:
   - component: {fileID: 1097093964}
   - component: {fileID: 1097093963}
   - component: {fileID: 1097093969}
+  - component: {fileID: 1097093970}
   m_Layer: 9
   m_Name: Bee_enemy_Fomation B (1)
   m_TagString: Untagged
@@ -2467,7 +2672,7 @@ Transform:
   m_GameObject: {fileID: 1097093961}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -3.31, y: 7.61, z: 0.03606322}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
+  m_LocalScale: {x: 2.5, y: 2.5, z: 1}
   m_Children: []
   m_Father: {fileID: 311712659}
   m_RootOrder: 1
@@ -2517,7 +2722,7 @@ BoxCollider2D:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1097093961}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
@@ -2527,7 +2732,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.41, y: 0.35}
+    oldSize: {x: 0.29, y: 0.18}
     newSize: {x: 0.14, y: 0.2}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -2572,7 +2777,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 994e3df87107e704c9688ed2fac544a2, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5f5198919fc70174bb72283a045d6380, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2624,6 +2829,39 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ExplosionGo: {fileID: 1119533763840070, guid: 9fdf3930d7eba5c48871264a4dfd8a2c,
     type: 2}
+  DropItem1: {fileID: 0}
+--- !u!60 &1097093970
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1097093961}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.29, y: 0.18}
+    newSize: {x: 0.14, y: 0.2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.114999995, y: 0.089999996}
+      - {x: -0.145, y: 0.049999997}
+      - {x: -0.145, y: -0.07}
+      - {x: -0.105, y: -0.089999996}
+      - {x: 0.085, y: -0.089999996}
+      - {x: 0.145, y: -0.07}
+      - {x: 0.145, y: 0.03}
+      - {x: 0.105, y: 0.089999996}
 --- !u!1 &1123837826
 GameObject:
   m_ObjectHideFlags: 0
@@ -2696,6 +2934,7 @@ GameObject:
   - component: {fileID: 1161474025}
   - component: {fileID: 1161474024}
   - component: {fileID: 1161474030}
+  - component: {fileID: 1161474031}
   m_Layer: 9
   m_Name: Bee Left 1 (3)
   m_TagString: Untagged
@@ -2712,7 +2951,7 @@ Transform:
   m_GameObject: {fileID: 1161474022}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -1.68, y: 7.14, z: 0.061523438}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
+  m_LocalScale: {x: 2.5, y: 2.5, z: 1}
   m_Children: []
   m_Father: {fileID: 1661738997}
   m_RootOrder: 3
@@ -2770,7 +3009,7 @@ BoxCollider2D:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1161474022}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
@@ -2780,7 +3019,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.41, y: 0.35}
+    oldSize: {x: 0.29, y: 0.18}
     newSize: {x: 0.14, y: 0.2}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -2825,7 +3064,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 994e3df87107e704c9688ed2fac544a2, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5f5198919fc70174bb72283a045d6380, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2877,6 +3116,39 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ExplosionGo: {fileID: 1119533763840070, guid: 9fdf3930d7eba5c48871264a4dfd8a2c,
     type: 2}
+  DropItem1: {fileID: 0}
+--- !u!60 &1161474031
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1161474022}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.29, y: 0.18}
+    newSize: {x: 0.14, y: 0.2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.114999995, y: 0.089999996}
+      - {x: -0.145, y: 0.049999997}
+      - {x: -0.145, y: -0.07}
+      - {x: -0.105, y: -0.089999996}
+      - {x: 0.085, y: -0.089999996}
+      - {x: 0.145, y: -0.07}
+      - {x: 0.145, y: 0.03}
+      - {x: 0.105, y: 0.089999996}
 --- !u!1 &1178552614
 GameObject:
   m_ObjectHideFlags: 0
@@ -2921,6 +3193,7 @@ GameObject:
   - component: {fileID: 1193087964}
   - component: {fileID: 1193087963}
   - component: {fileID: 1193087969}
+  - component: {fileID: 1193087970}
   m_Layer: 9
   m_Name: Bee Right apart
   m_TagString: Untagged
@@ -2937,7 +3210,7 @@ Transform:
   m_GameObject: {fileID: 1193087961}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -3.06, y: 9.75, z: 0.03606322}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
+  m_LocalScale: {x: 2.5, y: 2.5, z: 1}
   m_Children: []
   m_Father: {fileID: 311712659}
   m_RootOrder: 3
@@ -2992,7 +3265,7 @@ BoxCollider2D:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1193087961}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
@@ -3002,7 +3275,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.41, y: 0.35}
+    oldSize: {x: 0.29, y: 0.18}
     newSize: {x: 0.14, y: 0.2}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -3047,7 +3320,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 994e3df87107e704c9688ed2fac544a2, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5f5198919fc70174bb72283a045d6380, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -3099,6 +3372,39 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ExplosionGo: {fileID: 1119533763840070, guid: 9fdf3930d7eba5c48871264a4dfd8a2c,
     type: 2}
+  DropItem1: {fileID: 0}
+--- !u!60 &1193087970
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1193087961}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.29, y: 0.18}
+    newSize: {x: 0.14, y: 0.2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.114999995, y: 0.089999996}
+      - {x: -0.145, y: 0.049999997}
+      - {x: -0.145, y: -0.07}
+      - {x: -0.105, y: -0.089999996}
+      - {x: 0.085, y: -0.089999996}
+      - {x: 0.145, y: -0.07}
+      - {x: 0.145, y: 0.03}
+      - {x: 0.105, y: 0.089999996}
 --- !u!1 &1225760521
 GameObject:
   m_ObjectHideFlags: 0
@@ -3678,6 +3984,7 @@ GameObject:
   - component: {fileID: 1389639543}
   - component: {fileID: 1389639542}
   - component: {fileID: 1389639548}
+  - component: {fileID: 1389639549}
   m_Layer: 9
   m_Name: Bee Left 1 (1)
   m_TagString: Untagged
@@ -3694,7 +4001,7 @@ Transform:
   m_GameObject: {fileID: 1389639540}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -1.8, y: 3.93, z: 0.061523438}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
+  m_LocalScale: {x: 2.5, y: 2.5, z: 1}
   m_Children: []
   m_Father: {fileID: 1661738997}
   m_RootOrder: 1
@@ -3745,7 +4052,7 @@ BoxCollider2D:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1389639540}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
@@ -3755,7 +4062,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.41, y: 0.35}
+    oldSize: {x: 0.29, y: 0.18}
     newSize: {x: 0.14, y: 0.2}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -3800,7 +4107,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 994e3df87107e704c9688ed2fac544a2, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5f5198919fc70174bb72283a045d6380, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -3852,6 +4159,39 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ExplosionGo: {fileID: 1119533763840070, guid: 9fdf3930d7eba5c48871264a4dfd8a2c,
     type: 2}
+  DropItem1: {fileID: 0}
+--- !u!60 &1389639549
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1389639540}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.29, y: 0.18}
+    newSize: {x: 0.14, y: 0.2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.114999995, y: 0.089999996}
+      - {x: -0.145, y: 0.049999997}
+      - {x: -0.145, y: -0.07}
+      - {x: -0.105, y: -0.089999996}
+      - {x: 0.085, y: -0.089999996}
+      - {x: 0.145, y: -0.07}
+      - {x: 0.145, y: 0.03}
+      - {x: 0.105, y: 0.089999996}
 --- !u!1 &1399346808
 GameObject:
   m_ObjectHideFlags: 0
@@ -4749,6 +5089,7 @@ GameObject:
   - component: {fileID: 1959637819}
   - component: {fileID: 1959637818}
   - component: {fileID: 1959637824}
+  - component: {fileID: 1959637825}
   m_Layer: 9
   m_Name: Blue Bee Across (1)
   m_TagString: Untagged
@@ -4765,7 +5106,7 @@ Transform:
   m_GameObject: {fileID: 1959637816}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -15.31, y: -1.77, z: 10}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
+  m_LocalScale: {x: 2.5, y: 2.5, z: 1}
   m_Children: []
   m_Father: {fileID: 719487356}
   m_RootOrder: 1
@@ -4825,7 +5166,7 @@ BoxCollider2D:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1959637816}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
@@ -4835,7 +5176,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.41, y: 0.35}
+    oldSize: {x: 0.29, y: 0.18}
     newSize: {x: 0.14, y: 0.2}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -4880,8 +5221,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: e53d297a7509c37458d0a22f12cdb337, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 5f5198919fc70174bb72283a045d6380, type: 3}
+  m_Color: {r: 0.14509805, g: 0.8784314, b: 0.6392157, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -4932,6 +5273,39 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ExplosionGo: {fileID: 1119533763840070, guid: 9fdf3930d7eba5c48871264a4dfd8a2c,
     type: 2}
+  DropItem1: {fileID: 0}
+--- !u!60 &1959637825
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1959637816}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.29, y: 0.18}
+    newSize: {x: 0.14, y: 0.2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.114999995, y: 0.089999996}
+      - {x: -0.145, y: 0.049999997}
+      - {x: -0.145, y: -0.07}
+      - {x: -0.105, y: -0.089999996}
+      - {x: 0.085, y: -0.089999996}
+      - {x: 0.145, y: -0.07}
+      - {x: 0.145, y: 0.03}
+      - {x: 0.105, y: 0.089999996}
 --- !u!1 &1977709896
 GameObject:
   m_ObjectHideFlags: 0
@@ -4948,6 +5322,7 @@ GameObject:
   - component: {fileID: 1977709899}
   - component: {fileID: 1977709898}
   - component: {fileID: 1977709904}
+  - component: {fileID: 1977709905}
   m_Layer: 9
   m_Name: Blue Bee Across
   m_TagString: Untagged
@@ -4964,7 +5339,7 @@ Transform:
   m_GameObject: {fileID: 1977709896}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -12.313507, y: -1.77, z: 10}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
+  m_LocalScale: {x: 2.5, y: 2.5, z: 1}
   m_Children: []
   m_Father: {fileID: 719487356}
   m_RootOrder: 0
@@ -5024,7 +5399,7 @@ BoxCollider2D:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1977709896}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
@@ -5034,7 +5409,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.41, y: 0.35}
+    oldSize: {x: 0.29, y: 0.18}
     newSize: {x: 0.14, y: 0.2}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -5079,8 +5454,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: e53d297a7509c37458d0a22f12cdb337, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 5f5198919fc70174bb72283a045d6380, type: 3}
+  m_Color: {r: 0.1448469, g: 0.8773585, b: 0.63548964, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -5131,6 +5506,39 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ExplosionGo: {fileID: 1119533763840070, guid: 9fdf3930d7eba5c48871264a4dfd8a2c,
     type: 2}
+  DropItem1: {fileID: 0}
+--- !u!60 &1977709905
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1977709896}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.29, y: 0.18}
+    newSize: {x: 0.14, y: 0.2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.114999995, y: 0.089999996}
+      - {x: -0.145, y: 0.049999997}
+      - {x: -0.145, y: -0.07}
+      - {x: -0.105, y: -0.089999996}
+      - {x: 0.085, y: -0.089999996}
+      - {x: 0.145, y: -0.07}
+      - {x: 0.145, y: 0.03}
+      - {x: 0.105, y: 0.089999996}
 --- !u!1 &2013488315
 GameObject:
   m_ObjectHideFlags: 0

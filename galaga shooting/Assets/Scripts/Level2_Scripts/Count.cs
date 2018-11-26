@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class Count : MonoBehaviour {
 
-    private PlayerShooting player;
+    private PlayerShooting2 player;
     public int powerTimer;
 
     // Use this for initialization
     void Start () {
-        player = gameObject.GetComponent<PlayerShooting>();
+        player = gameObject.GetComponent<PlayerShooting2>();
 	}
 
     public IEnumerator StartCountdown(int powerTime)

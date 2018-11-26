@@ -104,13 +104,14 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1640925199434858}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 385109c295c303c459924838ed61bf0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   ExplosionGo: {fileID: 1119533763840070, guid: 9fdf3930d7eba5c48871264a4dfd8a2c,
     type: 2}
+  DropItem1: {fileID: 0}
 --- !u!114 &114400553697720426
 MonoBehaviour:
   m_ObjectHideFlags: 1
