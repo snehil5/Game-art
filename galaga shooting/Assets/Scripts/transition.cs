@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class transition : MonoBehaviour {
-    float timeLeft = 3.0f;
+    float timeLeft = 5.0f;
     // Use this for initialization
     void Start () {
 		
