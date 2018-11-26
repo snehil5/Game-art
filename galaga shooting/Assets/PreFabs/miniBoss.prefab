@@ -194,8 +194,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EnemyBulletfab: {fileID: 1501213556182860, guid: 67ad454cd0e44ca41865400f55e353c6,
     type: 2}
-  startShooting: 0
-  ShootingDelay: 0
+  startShooting: 3
+  ShootingDelay: 1
 --- !u!114 &114620443885005480
 MonoBehaviour:
   m_ObjectHideFlags: 1

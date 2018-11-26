@@ -1019,7 +1019,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14817df635f842945b483bd36e98664d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 25
+  health: 1
   Explosion: {fileID: 1278752239827694, guid: f7abd1400df72674681b744391882742, type: 2}
   droptop: {fileID: 0}
   invulnPeriod: 0
@@ -1334,7 +1334,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14817df635f842945b483bd36e98664d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 25
+  health: 1
   Explosion: {fileID: 1278752239827694, guid: f7abd1400df72674681b744391882742, type: 2}
   droptop: {fileID: 0}
   invulnPeriod: 0
@@ -2277,7 +2277,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14817df635f842945b483bd36e98664d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 25
+  health: 1
   Explosion: {fileID: 1278752239827694, guid: f7abd1400df72674681b744391882742, type: 2}
   droptop: {fileID: 0}
   invulnPeriod: 0
@@ -3187,7 +3187,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14817df635f842945b483bd36e98664d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 25
+  health: 1
   Explosion: {fileID: 1278752239827694, guid: f7abd1400df72674681b744391882742, type: 2}
   droptop: {fileID: 0}
   invulnPeriod: 0
@@ -3523,7 +3523,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14817df635f842945b483bd36e98664d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 25
+  health: 1
   Explosion: {fileID: 1278752239827694, guid: f7abd1400df72674681b744391882742, type: 2}
   droptop: {fileID: 0}
   invulnPeriod: 0
@@ -4082,7 +4082,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14817df635f842945b483bd36e98664d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 25
+  health: 1
   Explosion: {fileID: 1278752239827694, guid: f7abd1400df72674681b744391882742, type: 2}
   droptop: {fileID: 0}
   invulnPeriod: 0
@@ -4337,7 +4337,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14817df635f842945b483bd36e98664d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 25
+  health: 1
   Explosion: {fileID: 1278752239827694, guid: f7abd1400df72674681b744391882742, type: 2}
   droptop: {fileID: 0}
   invulnPeriod: 0
@@ -4822,7 +4822,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14817df635f842945b483bd36e98664d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 25
+  health: 1
   Explosion: {fileID: 1278752239827694, guid: f7abd1400df72674681b744391882742, type: 2}
   droptop: {fileID: 0}
   invulnPeriod: 0
@@ -5095,7 +5095,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14817df635f842945b483bd36e98664d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 25
+  health: 1
   Explosion: {fileID: 1278752239827694, guid: f7abd1400df72674681b744391882742, type: 2}
   droptop: {fileID: 0}
   invulnPeriod: 0
@@ -5323,6 +5323,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b73606b4dcf4be84d862769e58eb1e6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  effectSlider: {fileID: 0}
 --- !u!82 &1283055228
 AudioSource:
   m_ObjectHideFlags: 0
@@ -6114,7 +6115,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14817df635f842945b483bd36e98664d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 25
+  health: 1
   Explosion: {fileID: 1278752239827694, guid: f7abd1400df72674681b744391882742, type: 2}
   droptop: {fileID: 0}
   invulnPeriod: 0
@@ -7875,7 +7876,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14817df635f842945b483bd36e98664d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 50
+  health: 1
   Explosion: {fileID: 1278752239827694, guid: f7abd1400df72674681b744391882742, type: 2}
   droptop: {fileID: 0}
   invulnPeriod: 0
@@ -8114,7 +8115,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14817df635f842945b483bd36e98664d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 50
+  health: 1
   Explosion: {fileID: 1278752239827694, guid: f7abd1400df72674681b744391882742, type: 2}
   droptop: {fileID: 0}
   invulnPeriod: 0

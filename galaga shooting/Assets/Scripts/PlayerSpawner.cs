@@ -83,13 +83,13 @@ public class PlayerSpawner : MonoBehaviour {
             }
         }
 
-        if (score >= 115 ) {
+        if (score >= 60) {
             
-            timeLeft -= Time.deltaTime;
-            if (timeLeft < 0)
-            {
-               // SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-            }
+           // timeLeft -= Time.deltaTime;
+           // if (timeLeft < 0)
+            //{
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+           // }
         }
 
         if (playerInstance == null && numLives > 0)
