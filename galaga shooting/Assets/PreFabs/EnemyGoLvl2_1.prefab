@@ -55,7 +55,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1924415849873080}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -7.47976, y: 1.9742783, z: 0}
   m_LocalScale: {x: 1.0422, y: 1.0422, z: 1.0422}
   m_Children:
   - {fileID: 4339756818505890}
@@ -151,6 +151,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EnemyBulletfab: {fileID: 1501213556182860, guid: 67ad454cd0e44ca41865400f55e353c6,
     type: 2}
+  startShooting: 1
+  ShootingDelay: 1
 --- !u!114 &114234162467880718
 MonoBehaviour:
   m_ObjectHideFlags: 1

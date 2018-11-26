@@ -8,7 +8,7 @@ public class Audio : MonoBehaviour {
     public static AudioClip pickup, shooting, bombExpode, menuSelect,
         bossLaser, Explosion, laserCharging, BossIntro, bossExplode;
     static AudioSource audioSrc;
-    //public Slider effectSlider;
+    public Slider effectSlider;
 
     // Use this for initialization
     void Start()
@@ -25,7 +25,7 @@ public class Audio : MonoBehaviour {
         BossIntro = Resources.Load<AudioClip>("BossIntro");
         bossExplode = Resources.Load<AudioClip>("boss death");
 
-        //effectSlider.value = 1f;
+        effectSlider.value = 1f;
         if (shooting == null)
         {
             Debug.Log("FAILED");
@@ -37,8 +37,8 @@ public class Audio : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-        //audioSrc.volume = PlayerPrefs.GetFloat("Effect Volume");
-        //effectSlider.value = PlayerPrefs.GetFloat("Effect Volume");
+        audioSrc.volume = PlayerPrefs.GetFloat("Effect Volume");
+        effectSlider.value = PlayerPrefs.GetFloat("Effect Volume");
     }
 
     public static void PlaySound(string clip)
@@ -78,9 +78,9 @@ public class Audio : MonoBehaviour {
     }
 
     //Set only effect volume
-    /*public void SetEffectVolume(float vol)
+    public void SetEffectVolume(float vol)
     {
         PlayerPrefs.SetFloat("Effect Volume", vol);
-    }*/
+    }
 
 }

@@ -5,11 +5,12 @@ using UnityEngine;
 public class EnemyGun : MonoBehaviour {
 
     public GameObject EnemyBulletfab;
+    public float startShooting, ShootingDelay;
     // Use this for initialization
     
 
     void Start () {
-       Invoke("FireEnemyBullet", 1);
+       Invoke("FireEnemyBullet", startShooting);
 	}
 	
 	// Update is called once per frame
@@ -34,7 +35,7 @@ public class EnemyGun : MonoBehaviour {
             bullet.GetComponent<EnemyBulletOff>().SetDirection(direction);
             }
 
-          Invoke("FireEnemyBullet", 1);  
+          Invoke("FireEnemyBullet", ShootingDelay);  
         }
     }
 

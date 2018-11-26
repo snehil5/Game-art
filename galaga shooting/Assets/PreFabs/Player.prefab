@@ -115,6 +115,7 @@ GameObject:
   - component: {fileID: 114871229267704564}
   - component: {fileID: 50701993932999352}
   - component: {fileID: 60587436087177172}
+  - component: {fileID: 95150547627500256}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -257,7 +258,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1634919933007590}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.702772, y: -0.21182466, z: 0}
+  m_LocalPosition: {x: 5.790716, y: 0.13365147, z: 0}
   m_LocalScale: {x: 0.23, y: 0.15, z: 2}
   m_Children:
   - {fileID: 4698259579892424}
@@ -306,7 +307,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -551,6 +552,24 @@ PolygonCollider2D:
       - {x: -0.49499997, y: 0.73499995}
       - {x: -0.48499998, y: 0.705}
       - {x: -0.475, y: 0.715}
+--- !u!95 &95150547627500256
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1634919933007590}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 641f81a87edfad541a07c337f428847f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &114280072600352238
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -585,7 +604,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14817df635f842945b483bd36e98664d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 1
+  health: 3
   Explosion: {fileID: 1278752239827694, guid: f7abd1400df72674681b744391882742, type: 2}
   droptop: {fileID: 0}
   invulnPeriod: 0
