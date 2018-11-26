@@ -8,6 +8,9 @@ public class SelfDestruct : MonoBehaviour
     public float timer = 5f;
     public GameObject deathFX;
     private DamageHandler dam;
+    BossHealth boss;
+    EyeHealth eye;
+
 
     // Update is called once per frame
     void Update()
@@ -26,6 +29,22 @@ public class SelfDestruct : MonoBehaviour
         {
             dam = collision.GetComponent<DamageHandler>();
             dam.hurt();
+            Destroy(Instantiate(deathFX, transform.position, transform.rotation), .2f);
+            Destroy(gameObject);
+        }
+
+        if (collision.tag == "boss")
+        {
+            boss = collision.GetComponent<BossHealth>();
+            boss.TakeDamage(1);
+            Destroy(Instantiate(deathFX, transform.position, transform.rotation), .2f);
+            Destroy(gameObject);
+        }
+
+        if (collision.tag == "Eye")
+        {
+            eye = collision.GetComponent<EyeHealth>();
+            eye.TakeDamage(1);
             Destroy(Instantiate(deathFX, transform.position, transform.rotation), .2f);
             Destroy(gameObject);
         }
