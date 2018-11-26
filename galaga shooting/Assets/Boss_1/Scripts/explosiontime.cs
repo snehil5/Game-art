@@ -82,7 +82,7 @@ public class explosiontime : MonoBehaviour {
             
         }
 
-        if (timeofexplosion == -50)
+        if (timeofexplosion == -5)
         {
             
             Destroy(explosion0);
