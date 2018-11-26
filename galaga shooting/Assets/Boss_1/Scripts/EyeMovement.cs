@@ -79,7 +79,7 @@ public class EyeMovement : MonoBehaviour
 
         if (other.CompareTag("Player"))
         {
-            Debug.Log("KAMIKAZE");
+            Debug.Log("HURTTT!!");  //Player colliding with eye
             Destroy(Instantiate(destroyeffect, transform.position, Quaternion.identity), 1.0f);
             Destroy(gameObject);
         }
