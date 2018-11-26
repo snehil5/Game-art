@@ -37,7 +37,7 @@ public class EnemySpawnerLvl2 : MonoBehaviour {
             for (int i = 0; i < hazardCount; i++)
             {
                 random_number = Random.Range(1, 100);
-                Debug.Log("Random number is: " + random_number);
+                //Debug.Log("Random number is: " + random_number);
                 if (random_number > 0 && random_number < 71)
                 {
                     Vector2 min = Camera.main.ViewportToWorldPoint(new Vector2(.2f, 0));

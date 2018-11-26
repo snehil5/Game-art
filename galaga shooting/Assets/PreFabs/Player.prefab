@@ -356,9 +356,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   powerTime: 30
-  powerTimer: 0
-  Timer: {fileID: 0}
-  bulletPrefab: {fileID: 1949076673984150, guid: 7f9e7506878970549921dfeb9cd52f74,
+  bulletPrefab: {fileID: 1949076673984150, guid: f9946879766e61546a0077ca3e863b90,
     type: 2}
   p1: {fileID: 4166451738333588}
   p2: {fileID: 4219472152646230}
@@ -368,8 +366,7 @@ MonoBehaviour:
   p6: {fileID: 4516859371075022}
   p7: {fileID: 4688993660351044}
   shootinglvl: 0
-  fireDelay: 0.25
-  cooldownTimer: 0
+  fireDelay: 0.05
 --- !u!114 &114421174330811926
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -382,6 +379,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 1
+  Explosion: {fileID: 1278752239827694, guid: f7abd1400df72674681b744391882742, type: 2}
   invulnPeriod: 0
 --- !u!212 &212878812441101812
 SpriteRenderer:

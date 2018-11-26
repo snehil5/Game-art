@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class EnemyControlLvl2_1 : MonoBehaviour {
+    DamageHandler health;
     float speed;
 
 	// Use this for initialization
 	void Start () {
+        health = gameObject.GetComponent<DamageHandler>();
         speed = 2f;
 	}
 	

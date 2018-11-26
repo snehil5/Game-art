@@ -25,10 +25,10 @@ GameObject:
   - component: {fileID: 61937898026646828}
   - component: {fileID: 50816598366200132}
   - component: {fileID: 114234162467880718}
-  - component: {fileID: 114265134129030238}
+  - component: {fileID: 114866273436014284}
   m_Layer: 0
   m_Name: EnemyGoLvl2_1
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -115,26 +115,15 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1924415849873080}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 14817df635f842945b483bd36e98664d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 1
+  health: 15
+  Explosion: {fileID: 1278752239827694, guid: f7abd1400df72674681b744391882742, type: 2}
+  droptop: {fileID: 1537526776279802, guid: 9e01895f399b85a438785ff32f897f6e, type: 2}
   invulnPeriod: 0
---- !u!114 &114265134129030238
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1924415849873080}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 385109c295c303c459924838ed61bf0f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ExplosionGo: {fileID: 1278752239827694, guid: f7abd1400df72674681b744391882742,
-    type: 2}
 --- !u!114 &114581094651833890
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -146,6 +135,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 503011be97d72ce43867e253871c9141, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114866273436014284
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1924415849873080}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b55aef241d440143bb6071bb9936c33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dropItem: {fileID: 1537526776279802, guid: 9e01895f399b85a438785ff32f897f6e, type: 2}
 --- !u!212 &212058007020384420
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -178,8 +179,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -146053073
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300008, guid: 94da8abe9ae826046a239f6e56087e15, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

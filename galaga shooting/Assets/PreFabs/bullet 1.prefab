@@ -113,7 +113,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timer: 0.55
-  deathFX: {fileID: 1761808268656658, guid: fa0a2e7fe7867fc45ae28809cd58df4c, type: 2}
+  deathFX: {fileID: 1761808268656658, guid: 3e50e4bbf01cef94d9bd80da0eaefe2e, type: 2}
 --- !u!212 &212829778401476696
 SpriteRenderer:
   m_ObjectHideFlags: 1

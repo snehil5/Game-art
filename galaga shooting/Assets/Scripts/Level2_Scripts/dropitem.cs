@@ -7,10 +7,24 @@ public class dropitem : MonoBehaviour
 {
     public GameObject dropItem;
     float speed = 2f;
+    DamageHandler droptop;
+    Transform spot;
 
-    private void OnTriggerEnter2D(Collider2D other)
+    private void Start()
     {
-        Instantiate(dropItem, transform.position, Quaternion.identity);
+        droptop = gameObject.GetComponent<DamageHandler>();
     }
-    
+
+    public void Update()
+    {
+        //spot.transform.position = droptop.transform.position;
+        if (droptop.health <= 0)
+        {
+            
+            //Instantiate(dropItem, spot.transform.position, Quaternion.identity);
+            Debug.Log("RAINDROP");
+        }
+    }
 }
+
+
