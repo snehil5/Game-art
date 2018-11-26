@@ -54,6 +54,11 @@ public class EyeHealth : MonoBehaviour {
             eyeanim.SetTrigger("hurt");
         }
 
+        if (other.CompareTag("Player"))
+        {
+            Debug.Log("HURTTT!!");
+        }
+
     }
 
 

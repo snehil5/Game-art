@@ -9,7 +9,7 @@ public class hurtplayer : MonoBehaviour {
     {
         if (collision.CompareTag("Player"))
         {
-            Debug.Log("IM HURT");
+            Debug.Log("HURTTT!!");
         }
 
     }
