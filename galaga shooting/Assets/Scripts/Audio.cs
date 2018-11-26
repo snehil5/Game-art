@@ -1,11 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Audio : MonoBehaviour {
 
     public static AudioClip pickup, shooting;
     static AudioSource audioSrc;
+    public Slider effectSlider;
 
     // Use this for initialization
     void Start()
@@ -14,7 +16,8 @@ public class Audio : MonoBehaviour {
         audioSrc = gameObject.GetComponent<AudioSource>();
         pickup = Resources.Load<AudioClip>("pickup");
         shooting = Resources.Load<AudioClip>("shooting");
-        if(shooting == null)
+        effectSlider.value = 1f;
+        if (shooting == null)
         {
             Debug.Log("FAILED");
         }
@@ -25,7 +28,8 @@ public class Audio : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-
+        audioSrc.volume = PlayerPrefs.GetFloat("Effect Volume");
+        effectSlider.value = PlayerPrefs.GetFloat("Effect Volume");
     }
 
     public static void PlaySound(string clip)
@@ -42,5 +46,10 @@ public class Audio : MonoBehaviour {
         }
     }
 
+    //Set only effect volume
+    public void SetEffectVolume(float vol)
+    {
+        PlayerPrefs.SetFloat("Effect Volume", vol);
+    }
 
 }
