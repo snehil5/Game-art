@@ -21,7 +21,7 @@ public class ShootLaser : MonoBehaviour {
         
         
       
-        if (timebetweenattack <= 0)
+        if (timebetweenattack <= 0)     //SHOOTING LASER
         {
             eyeanimator.SetTrigger("shoot");
             Debug.Log("shootinglaser");

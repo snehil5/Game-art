@@ -10,7 +10,9 @@ public class EyeMovement : MonoBehaviour
     private Vector3 moveDirection;
     private float eyeSpeed;
     public GameObject destroyeffect;
-    
+    GameObject BOSS;
+    BossHealth bosshp;
+
     // Use this for initialization
     void Start()
     {
@@ -18,7 +20,8 @@ public class EyeMovement : MonoBehaviour
         currentPos = transform.position;
         playerPosition = player.transform.position;
         moveDirection = (playerPosition - currentPos).normalized;
-        
+        BOSS = GameObject.Find("Boss1");
+        bosshp = BOSS.GetComponent<BossHealth>();
         eyeSpeed = 5.5f;
     }
 
@@ -56,6 +59,15 @@ public class EyeMovement : MonoBehaviour
             playerPosition = player.transform.position;
             transform.LookAt(playerPosition);
             moveDirection = (playerPosition - currentPos).normalized;
+        }
+
+        if (gameObject != null)
+        {
+            if (bosshp.health <= 0)
+            {
+                Destroy(Instantiate(destroyeffect, transform.position, Quaternion.identity), 1.0f);
+                Destroy(gameObject);
+            }   
         }
 
       

@@ -4,8 +4,33 @@ using UnityEngine;
 
 public class BossHealth : MonoBehaviour {
     public int health;
-    public Animator bossanim;
-    
+    Invisibility invisscript;
+    DropBomb bombscript;
+    GameObject mainhead;
+
+
+    void Start()
+    {
+        mainhead = GameObject.Find("MAINHEAD");
+        invisscript = gameObject.GetComponent<Invisibility>();
+        bombscript = mainhead.GetComponent<DropBomb>();
+    }
+
+    void Update()
+    {
+        if (health < (health / 2))
+        {
+            Debug.Log("ACTIVATING FASTER BOMBS");
+            bombscript.bombdelay = 1.0f;
+        }
+
+        if (health <= 0)
+        {
+
+            invisscript.enabled = false;
+            bombscript.enabled = false;
+        }
+    }
 
     public void TakeDamage(int damage)
     {

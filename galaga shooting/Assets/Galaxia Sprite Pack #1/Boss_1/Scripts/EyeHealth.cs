@@ -18,7 +18,7 @@ public class EyeHealth : MonoBehaviour {
         bosshp = BOSS.GetComponent<BossHealth>();
     }
 
-
+    
     public void TakeDamage(int damage)
     {
         health -= damage;
@@ -27,9 +27,11 @@ public class EyeHealth : MonoBehaviour {
 
     void Update()
     {
-        
-
-        if (bosshp.health <= atbosshp)
+        if (bosshp.health == 0)
+        {
+            DestroyEye();      //EYE IS DYING HERE TOO
+        }
+        else if (bosshp.health <= atbosshp)                                 //EYE IS POPPING HERE
         {
             Debug.Log("PRING BOSS HP" + bosshp.health);
             Instantiate(poppedeye, transform.position, transform.rotation);
@@ -38,7 +40,7 @@ public class EyeHealth : MonoBehaviour {
 
         }else if (health <= 0)
         {
-            DestroyEye();
+            DestroyEye();       //EYE IS DYING HERE
         }
 
 
@@ -58,7 +60,7 @@ public class EyeHealth : MonoBehaviour {
 
     void DestroyEye()
     {
-        Destroy(Instantiate(destroyeffect, transform.position, Quaternion.identity), 1.0f);
+        Destroy(Instantiate(destroyeffect, transform.position, Quaternion.identity), 2.0f);
         Destroy(gameObject);
         Destroy(chargingobject);
     }

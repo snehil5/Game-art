@@ -37,7 +37,7 @@ public class BombBehavior : MonoBehaviour {
         }
     }
 
-    void Explode()
+    void Explode()      //BOSS BOMB EXPLODING HERE
     {
         Destroy(Instantiate(explosionEffect, transform.position, transform.rotation), 0.47f);
 

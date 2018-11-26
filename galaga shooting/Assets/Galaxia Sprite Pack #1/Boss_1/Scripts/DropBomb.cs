@@ -10,6 +10,7 @@ public class DropBomb : MonoBehaviour {
     private Vector3 currentPos;
     private Vector3 moveDirection;
     float bombTiming = 5.0f;
+    public float bombdelay;
     // Use this for initialization
 
     // Update is called once per frame
@@ -19,6 +20,9 @@ public class DropBomb : MonoBehaviour {
         bombTiming -= Time.deltaTime;
         if (bombTiming <= 0f)
         {
+            //DROP TIME BOMB DROPPED AND CHASES PLAYER FOR..... 4.0f. IT WILL EXPLODE ONLY AFTER 4.0f so the sound bite can play for 4.0f. 
+            //Bomb explosion script is in the bBomb PREFAB and its called the BombBehaviour.
+
             dropBomb();
         }
     }
@@ -33,7 +37,7 @@ public class DropBomb : MonoBehaviour {
         var angle = Mathf.Atan2(moveDirection.y, moveDirection.x) * Mathf.Rad2Deg;
         transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
         transform.position += moveDirection * 4.0f * Time.deltaTime;
-        bombTiming = 5.0f;
+        bombTiming = bombdelay;
         Debug.Log("resetting");
     }
 }
