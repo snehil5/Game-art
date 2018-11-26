@@ -87,7 +87,7 @@ public class PlayerSpawner : MonoBehaviour {
             timeLeft -= Time.deltaTime;
             if (timeLeft < 0)
             {
-                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+               // SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
             }
         }
 

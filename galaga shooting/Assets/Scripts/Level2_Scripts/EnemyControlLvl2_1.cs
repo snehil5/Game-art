@@ -2,18 +2,22 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyControlLvl2_1 : MonoBehaviour {
+public class EnemyControlLvl2_1 : MonoBehaviour
+{
     DamageHandler health;
     float speed;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start()
+    {
         health = gameObject.GetComponent<DamageHandler>();
         speed = 2f;
-	}
-	
-	// Update is called once per frame
-	void Update () {
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+       
         Vector2 position = transform.position;
 
         position = new Vector2(position.x, position.y - speed * Time.deltaTime);
@@ -21,9 +25,14 @@ public class EnemyControlLvl2_1 : MonoBehaviour {
 
         Vector2 min = Camera.main.ViewportToWorldPoint(new Vector2(0, 0));
 
-        if(transform.position.y < min.y)
+        if (transform.position.y < min.y)
         {
             Destroy(gameObject);
         }
-	}
+    }
+    private void updateMini()
+    {
+
+    }
 }
+    

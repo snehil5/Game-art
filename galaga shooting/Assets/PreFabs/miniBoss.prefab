@@ -21,6 +21,9 @@ GameObject:
   - component: {fileID: 4681561854444130}
   - component: {fileID: 212607355832356806}
   - component: {fileID: 95630462030643694}
+  - component: {fileID: 60955767667413718}
+  - component: {fileID: 50290959134326638}
+  - component: {fileID: 114620443885005480}
   m_Layer: 0
   m_Name: miniBoss
   m_TagString: miniBoss
@@ -35,12 +38,100 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1236258475332464}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -1.9017547, y: -1.9136306, z: 0}
+  m_LocalScale: {x: 3, y: 3, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &50290959134326638
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1236258475332464}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!60 &60955767667413718
+PolygonCollider2D:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1236258475332464}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.45, y: 0.6}
+    newSize: {x: 0.45, y: 0.6}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.16167971, y: -0.1371679}
+      - {x: 0.195, y: -0.089999996}
+      - {x: 0.20996694, y: 0.011035085}
+      - {x: 0.24119434, y: 0.089905426}
+      - {x: 0.17689423, y: 0.14595997}
+      - {x: 0.12199342, y: 0.22497492}
+      - {x: -0.1080066, y: 0.22797994}
+      - {x: -0.14493382, y: 0.18694489}
+      - {x: -0.225, y: 0.16}
+      - {x: -0.18892054, y: 0.048080128}
+      - {x: -0.1679405, y: -0.120000005}
+      - {x: -0.155, y: -0.29999998}
+      - {x: -0.07676773, y: -0.30115315}
+      - {x: -0.06545071, y: -0.26507303}
+      - {x: -0.04574454, y: -0.24732427}
+      - {x: -0.013814529, y: -0.2098498}
+      - {x: 0.011781454, y: -0.23113415}
+      - {x: 0.059901357, y: -0.2510484}
+      - {x: 0.07233044, y: -0.29920027}
+      - {x: 0.155, y: -0.29999998}
+    - - {x: -0.065, y: 0.25}
+      - {x: -0.044999998, y: 0.22999999}
+      - {x: -0.015, y: 0.24}
+      - {x: -0.015, y: 0.26999998}
+      - {x: -0.035, y: 0.29}
+      - {x: -0.065, y: 0.28}
+    - - {x: 0.055, y: 0.29}
+      - {x: 0.005, y: 0.29}
+      - {x: 0.005, y: 0.24}
+      - {x: 0.024999999, y: 0.22999999}
+      - {x: 0.055, y: 0.22999999}
+      - {x: 0.065, y: 0.25}
+      - {x: 0.065, y: 0.28}
+    - - {x: -0.13499999, y: 0.25}
+      - {x: -0.105, y: 0.26}
+      - {x: -0.105, y: 0.29}
+      - {x: -0.13499999, y: 0.29999998}
+      - {x: -0.155, y: 0.28}
+    - - {x: 0.095, y: 0.29999998}
+      - {x: 0.095, y: 0.28}
+      - {x: 0.114999995, y: 0.26}
+      - {x: 0.13499999, y: 0.26}
+      - {x: 0.155, y: 0.28}
+      - {x: 0.155, y: 0.29999998}
 --- !u!95 &95630462030643694
 Animator:
   serializedVersion: 3
@@ -59,6 +150,17 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &114620443885005480
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1236258475332464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 503011be97d72ce43867e253871c9141, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &212607355832356806
 SpriteRenderer:
   m_ObjectHideFlags: 1

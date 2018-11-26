@@ -11,6 +11,8 @@ TagManager:
   - EnemyBullet
   - Enemy
   - powerup
+  - miniBoss
+  - spawning
   layers:
   - Default
   - TransparentFX
