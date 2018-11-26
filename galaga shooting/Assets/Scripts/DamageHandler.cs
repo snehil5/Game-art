@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+using UnityEngine.SceneManagement;
 public class DamageHandler : MonoBehaviour {
     public int health = 1;
     public GameObject Explosion;
@@ -9,6 +10,7 @@ public class DamageHandler : MonoBehaviour {
     public GameObject droptop;
 
 
+    EnemySpawnerLvl2 countEnemy;
     public float invulnPeriod = 0;
     float invulnTimer = 0;
     int correctLayer;
@@ -27,6 +29,8 @@ public class DamageHandler : MonoBehaviour {
         {
             Debug.Log("cannot find PlayerSpawner.");
         }
+        GameObject enemylvl2 = GameObject.FindWithTag("spawning");
+        countEnemy = enemylvl2.GetComponent<EnemySpawnerLvl2>();
     }
     private void OnTriggerEnter2D(Collider2D col)
     {
@@ -97,6 +101,18 @@ public class DamageHandler : MonoBehaviour {
 
     void Die()
     {
+        Scene currentScene = SceneManager.GetActiveScene();
+        // Retrieve the name of this scene.
+        string sceneName = currentScene.name;
+        if (sceneName == "SecondLevel")
+        {
+            Debug.Log(gameObject.tag + " is the game object ");
+            if (gameObject.tag == "Enemy")
+            {
+                Debug.Log("check num");
+                countEnemy.addCount();
+            }
+        }
         Destroy(Instantiate(Explosion,transform.position, transform.rotation), 0.7f);
         //explosion.PlayExplosion();
         Destroy(gameObject);
