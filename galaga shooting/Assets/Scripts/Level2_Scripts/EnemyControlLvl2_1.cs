@@ -18,8 +18,8 @@ public class EnemyControlLvl2_1 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log("the tag is " + gameObject.tag);
-        Debug.Log(transform.position.y + " is the y postiion" );
+       // Debug.Log("the tag is " + gameObject.tag);
+        //Debug.Log(transform.position.y + " is the y postiion" );
         if (gameObject.tag == "miniBoss" && noMove == 0)
         {
             updateMini();

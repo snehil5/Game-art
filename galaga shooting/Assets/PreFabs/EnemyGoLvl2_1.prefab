@@ -11,6 +11,22 @@ Prefab:
   m_SourcePrefab: {fileID: 0}
   m_RootGameObject: {fileID: 1924415849873080}
   m_IsPrefabAsset: 1
+--- !u!1 &1686913479587184
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4339756818505890}
+  - component: {fileID: 114051995519620404}
+  m_Layer: 0
+  m_Name: EnemyGunGo
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1924415849873080
 GameObject:
   m_ObjectHideFlags: 0
@@ -39,10 +55,24 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1924415849873080}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.12, y: 2.89, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1.0422, y: 1.0422, z: 1.0422}
-  m_Children: []
+  m_Children:
+  - {fileID: 4339756818505890}
   m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4339756818505890
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1686913479587184}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.286, z: -0.07834644}
+  m_LocalScale: {x: 0.9595088, y: 0.9595088, z: 0.9595088}
+  m_Children: []
+  m_Father: {fileID: 4323284995316746}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &50816598366200132
@@ -108,6 +138,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &114051995519620404
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1686913479587184}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8aa596f223641c44e88fc07034f9b199, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EnemyBulletfab: {fileID: 1501213556182860, guid: 67ad454cd0e44ca41865400f55e353c6,
+    type: 2}
 --- !u!114 &114234162467880718
 MonoBehaviour:
   m_ObjectHideFlags: 1
