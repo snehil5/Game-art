@@ -18,6 +18,7 @@ public class explosiontime : MonoBehaviour {
     GameObject explosion11;
     GameObject explosion12;
     
+    
 
     BossHealth bosshp;
     double timeofexplosion = 600;
@@ -83,7 +84,7 @@ public class explosiontime : MonoBehaviour {
 
         if (timeofexplosion == -50)
         {
-            Destroy(BOSS);
+            
             Destroy(explosion0);
             Destroy(explosion1);
             Destroy(explosion2);
@@ -99,6 +100,7 @@ public class explosiontime : MonoBehaviour {
             Destroy(explosion12);
 
             Destroy(Instantiate(fullexplosion, transform.position, transform.rotation), 3.0f);   //BIG EXPLOSION ON BOSS
+            Destroy(BOSS);
 
         }
 

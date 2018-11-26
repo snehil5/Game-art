@@ -7,18 +7,19 @@ public class BossHealth : MonoBehaviour {
     Invisibility invisscript;
     DropBomb bombscript;
     GameObject mainhead;
-
+    public int halfhp;
 
     void Start()
     {
         mainhead = GameObject.Find("MAINHEAD");
         invisscript = gameObject.GetComponent<Invisibility>();
         bombscript = mainhead.GetComponent<DropBomb>();
+        
     }
 
     void Update()
     {
-        if (health < (health / 2))
+        if (health < halfhp)
         {
             Debug.Log("ACTIVATING FASTER BOMBS");
             bombscript.bombdelay = 1.0f;
