@@ -28,17 +28,24 @@ public class DamageHandler : MonoBehaviour {
             Debug.Log("cannot find PlayerSpawner.");
         }
     }
-    /*private void OnTriggerEnter2D()
+    private void OnTriggerEnter2D(Collider2D col)
     {
-        Debug.Log("Trigger!");
-
-        health--;
-        if(invulnPeriod > 0)
+        if (gameObject.tag == "Player")
         {
-            invulnTimer = invulnPeriod;
-            gameObject.layer = 10;
+            if (col.tag == "Enemy")
+            {
+                health = 0;
+            }
         }
-    }*/
+
+        if (gameObject.tag == "Enemy")
+        {
+            if (col.tag == "Player")
+            {
+                health = 0;
+            }
+        }
+    }
 
     public void hurt()
     {
@@ -79,7 +86,10 @@ public class DamageHandler : MonoBehaviour {
         
         if (health <= 0)
         {
-            Instantiate(droptop, transform.position, Quaternion.identity);
+            if (droptop != null)
+            {
+                Instantiate(droptop, transform.position, Quaternion.identity);
+            }
             spwn.AddScore(5);
             Die();
         }
