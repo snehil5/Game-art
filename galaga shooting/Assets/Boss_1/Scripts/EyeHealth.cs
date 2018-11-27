@@ -30,6 +30,7 @@ public class EyeHealth : MonoBehaviour {
         if (bosshp.health == 0)
         {
             DestroyEye();      //EYE IS DYING HERE TOO
+            
         }
         else if (bosshp.health <= atbosshp)                                 //EYE IS POPPING HERE
         {
@@ -40,7 +41,8 @@ public class EyeHealth : MonoBehaviour {
 
         }else if (health <= 0)
         {
-            DestroyEye();       //EYE IS DYING HERE
+            DestroyEye();
+            //EYE IS DYING HERE
         }
 
 
@@ -67,6 +69,7 @@ public class EyeHealth : MonoBehaviour {
     {
         Destroy(Instantiate(destroyeffect, transform.position, Quaternion.identity), 2.0f);
         Destroy(gameObject);
+        Audio.PlaySound("BossExplode");
         Destroy(chargingobject);
     }
 

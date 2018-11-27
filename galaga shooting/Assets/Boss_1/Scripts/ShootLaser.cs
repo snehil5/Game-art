@@ -26,7 +26,7 @@ public class ShootLaser : MonoBehaviour {
             eyeanimator.SetTrigger("shoot");
             Debug.Log("shootinglaser");
             timebetweenattack = shootdelay;
-
+            Audio.PlaySound("bossLaser");
             Instantiate(laserprefab, laserposition, transform.rotation);
            
 

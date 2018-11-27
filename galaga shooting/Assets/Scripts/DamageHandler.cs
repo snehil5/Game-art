@@ -3,14 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 
 using UnityEngine.SceneManagement;
-public class DamageHandler : MonoBehaviour
-{
+public class DamageHandler : MonoBehaviour {
     public int health = 1;
     public GameObject Explosion;
     private Animator MyAnimator;
     public GameObject droptop;
 
-    private shieldStart shield;
 
     EnemySpawnerLvl2 countEnemy;
     EnemySpawnerLvl2 countMini;
@@ -22,45 +20,34 @@ public class DamageHandler : MonoBehaviour
 
     private void Start()
     {
-
-        shield = GameObject.FindGameObjectWithTag("Player").GetComponent<shieldStart>();
-
-
-       
-
-
         MyAnimator = GetComponent<Animator>();
         correctLayer = gameObject.layer;
         GameObject spwnObject = GameObject.FindWithTag("Respawn");
-        if (spwnObject != null)
+        if(spwnObject != null)
         {
             spwn = spwnObject.GetComponent<PlayerSpawner>();
         }
-        if (spwn == null)
+        if(spwn == null)
         {
             Debug.Log("cannot find PlayerSpawner.");
         }
         GameObject enemylvl2 = GameObject.FindWithTag("spawning");
-
+        
         countEnemy = enemylvl2.GetComponent<EnemySpawnerLvl2>();
     }
     private void OnTriggerEnter2D(Collider2D col)
     {
-        if (shield.IsShieldOn == false)
+        if (gameObject.tag == "Player")
         {
-            if (gameObject.tag == "Player")
+            if (col.tag == "Enemy")
             {
-                if (col.tag == "Enemy" || col.tag == "boss")
-                {
-                    health = 0;
-                }
-
+                health = 0;
             }
         }
 
         if (gameObject.tag == "Enemy")
         {
-            if (col.tag == "Player" || col.tag == "PlayerShield")
+            if (col.tag == "Player")
             {
                 health = 0;
             }
@@ -95,7 +82,7 @@ public class DamageHandler : MonoBehaviour
 
     void Update()
     {
-        if (invulnTimer > 0)
+        if(invulnTimer > 0)
         {
             invulnTimer -= Time.deltaTime;
             if (invulnTimer <= 0)
@@ -103,7 +90,7 @@ public class DamageHandler : MonoBehaviour
                 gameObject.layer = correctLayer;
             }
         }
-
+        
         if (health <= 0)
         {
             if (droptop != null)
@@ -134,11 +121,11 @@ public class DamageHandler : MonoBehaviour
                 countEnemy.addMini();
             }
         }
-        Destroy(Instantiate(Explosion, transform.position, transform.rotation), 0.7f);
+        Destroy(Instantiate(Explosion,transform.position, transform.rotation), 0.7f);
         //explosion.PlayExplosion();
         Destroy(gameObject);
 
-
+        
     }
-
+    
 }

@@ -69,7 +69,7 @@ public class explosiontime : MonoBehaviour {
         if (timeofexplosion == timetoexplode)
         {
             Instantiate(explosion, transform.position, transform.rotation); //SMALL EXPLOSIONS ON BOSS
-            
+            Audio.PlaySound("BossExplode");
             shakescript.Shake();
         }
 
@@ -100,6 +100,7 @@ public class explosiontime : MonoBehaviour {
             Destroy(explosion12);
 
             Destroy(Instantiate(fullexplosion, transform.position, transform.rotation), 3.0f);   //BIG EXPLOSION ON BOSS
+            Audio.PlaySound("BossExplode");
             Destroy(BOSS);
 
         }

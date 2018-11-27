@@ -19,7 +19,7 @@ public class ChargetheLaer : MonoBehaviour {
             
             Debug.Log("Charge");
             timebetweencharge = chargedelay;
-
+            Audio.PlaySound("laserCharging");
             charginganim.SetTrigger("charge");    //Charging happens SOUND BYTES FOR 3 SECONDS?
         }
     }
