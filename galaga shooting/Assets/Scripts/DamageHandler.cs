@@ -20,6 +20,9 @@ public class DamageHandler : MonoBehaviour {
 
     private void Start()
     {
+
+       
+
         MyAnimator = GetComponent<Animator>();
         correctLayer = gameObject.layer;
         GameObject spwnObject = GameObject.FindWithTag("Respawn");
@@ -97,7 +100,7 @@ public class DamageHandler : MonoBehaviour {
             {
                 Instantiate(droptop, transform.position, Quaternion.identity);
             }
-            spwn.AddScore(5);
+            spwn.AddScore(1075);
             Audio.PlaySound("Explosion");
             Die();
         }
