@@ -1019,7 +1019,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14817df635f842945b483bd36e98664d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 15
+  health: 5
   Explosion: {fileID: 1278752239827694, guid: f7abd1400df72674681b744391882742, type: 2}
   droptop: {fileID: 0}
   invulnPeriod: 0
@@ -1335,7 +1335,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14817df635f842945b483bd36e98664d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 15
+  health: 5
   Explosion: {fileID: 1278752239827694, guid: f7abd1400df72674681b744391882742, type: 2}
   droptop: {fileID: 0}
   invulnPeriod: 0
@@ -2283,7 +2283,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14817df635f842945b483bd36e98664d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 15
+  health: 5
   Explosion: {fileID: 1278752239827694, guid: f7abd1400df72674681b744391882742, type: 2}
   droptop: {fileID: 0}
   invulnPeriod: 0
@@ -3199,7 +3199,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14817df635f842945b483bd36e98664d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 15
+  health: 5
   Explosion: {fileID: 1278752239827694, guid: f7abd1400df72674681b744391882742, type: 2}
   droptop: {fileID: 0}
   invulnPeriod: 0
@@ -3535,7 +3535,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14817df635f842945b483bd36e98664d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 15
+  health: 5
   Explosion: {fileID: 1278752239827694, guid: f7abd1400df72674681b744391882742, type: 2}
   droptop: {fileID: 0}
   invulnPeriod: 0
@@ -3700,7 +3700,7 @@ Canvas:
   m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 1
-  m_Camera: {fileID: 0}
+  m_Camera: {fileID: 519420031}
   m_PlaneDistance: 100
   m_PixelPerfect: 1
   m_ReceivesEvents: 1
@@ -3708,7 +3708,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
-  m_SortingLayerID: -1265365751
+  m_SortingLayerID: -956971933
   m_SortingOrder: 0
   m_TargetDisplay: 0
 --- !u!224 &1010459202
@@ -4093,7 +4093,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14817df635f842945b483bd36e98664d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 15
+  health: 5
   Explosion: {fileID: 1278752239827694, guid: f7abd1400df72674681b744391882742, type: 2}
   droptop: {fileID: 1537526776279802, guid: 9e01895f399b85a438785ff32f897f6e, type: 2}
   invulnPeriod: 0
@@ -4334,7 +4334,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14817df635f842945b483bd36e98664d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 15
+  health: 5
   Explosion: {fileID: 1278752239827694, guid: f7abd1400df72674681b744391882742, type: 2}
   droptop: {fileID: 1537526776279802, guid: 9e01895f399b85a438785ff32f897f6e, type: 2}
   invulnPeriod: 0
@@ -4819,7 +4819,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14817df635f842945b483bd36e98664d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 15
+  health: 5
   Explosion: {fileID: 1278752239827694, guid: f7abd1400df72674681b744391882742, type: 2}
   droptop: {fileID: 1537526776279802, guid: 9e01895f399b85a438785ff32f897f6e, type: 2}
   invulnPeriod: 0
@@ -5092,7 +5092,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14817df635f842945b483bd36e98664d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 15
+  health: 5
   Explosion: {fileID: 1278752239827694, guid: f7abd1400df72674681b744391882742, type: 2}
   droptop: {fileID: 0}
   invulnPeriod: 0
@@ -6165,7 +6165,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14817df635f842945b483bd36e98664d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 15
+  health: 5
   Explosion: {fileID: 1278752239827694, guid: f7abd1400df72674681b744391882742, type: 2}
   droptop: {fileID: 0}
   invulnPeriod: 0
@@ -7995,7 +7995,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14817df635f842945b483bd36e98664d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 15
+  health: 5
   Explosion: {fileID: 1278752239827694, guid: f7abd1400df72674681b744391882742, type: 2}
   droptop: {fileID: 0}
   invulnPeriod: 0
@@ -8234,7 +8234,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14817df635f842945b483bd36e98664d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 15
+  health: 5
   Explosion: {fileID: 1278752239827694, guid: f7abd1400df72674681b744391882742, type: 2}
   droptop: {fileID: 0}
   invulnPeriod: 0
