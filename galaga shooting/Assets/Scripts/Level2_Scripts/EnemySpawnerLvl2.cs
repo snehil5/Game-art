@@ -2,13 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+using UnityEngine.SceneManagement;
 public class EnemySpawnerLvl2 : MonoBehaviour
 {
     public GameObject enemyGo;
     public GameObject asteroid1;
     public GameObject asteroid2;
     public GameObject miniBoss;
-
+    
     public int hazardCount = 10;
     public int waveCount;
     public float spawnWait;
@@ -22,30 +23,43 @@ public class EnemySpawnerLvl2 : MonoBehaviour
 
     int i = 0;
     int j = 0;
+    int k = 0;
     int totalWave = 3;
     int miniCount = 2;
+    float timeLeft = 5.0f;
+    transition changeLvl;
     // Use this for initialization
     void Start()
     {
-        //Invoke("SpawnEnemy", maxSpawnSec);
-        //Invoke("SpawnAsteroid", maxAstSpawn);
-        //Invoke("SpawnAsteroid2", maxAstSpawn);
+
+        changeLvl = GameObject.FindWithTag("spawning").GetComponent<transition>();
 
         Debug.Log("works till here");
         StartCoroutine(SpawnWaves());
+        //GameObject changeLvl = GameObject.FindWithTag("Player");
+        // lvlChange = changeLvl.GetComponent<transition>();
         //InvokeRepeating("IncreaseSpawnRate", 0f, 30f);
     }
 
+    
     // Update is called once per frame
     void Update()
     {
+        if (j == 2)
+        {
+            timeLeft -= Time.deltaTime;
+            if (timeLeft < 0)
+            {
 
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            }
+        }
     }
 
     IEnumerator SpawnWaves()
     {
         yield return new WaitForSeconds(startWait);
-        hazardCount = 5;
+        hazardCount = 1;
         spawnWait = 1.5f;
         while (i < hazardCount)
         {
@@ -76,7 +90,7 @@ public class EnemySpawnerLvl2 : MonoBehaviour
             Debug.Log(hazardCount + " is the needed");
             yield return new WaitForSeconds(spawnWait);
         }
-        hazardCount = 5;
+        hazardCount = 1;
         yield return new WaitForSeconds(waveWait);
         i = 0;
         spawnWait = 1.5f;
@@ -130,13 +144,14 @@ public class EnemySpawnerLvl2 : MonoBehaviour
             }
         }
 
-        
-
     }
 
-
-
-
+    
+    public void addMini()
+    {
+        j++;
+        
+    }
 
 
     public void addCount()

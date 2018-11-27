@@ -15,14 +15,14 @@ public class PlayerSpawner : MonoBehaviour {
     float invulnTimer = 0;
 
     static public int numLives = 3;
-    public int score;
-    float timeLeft;
+    public static int score;
+    float timeLeft = 5.0f;
     float playTime;
     float respawnTimer;
     public int count = 0;
-
-	// Use this for initialization
-	void Start () {
+    
+    // Use this for initialization
+    void Start () {
         score = 0;
         playTime = 0;
         Scene currentScene = SceneManager.GetActiveScene();
@@ -58,11 +58,7 @@ public class PlayerSpawner : MonoBehaviour {
     {
         score += newScore;
 
-        if (score >= 115)
-        {
-            timeLeft = 5.0f;
-            
-        }
+        
     }
 
     // Update is called once per frame
@@ -83,13 +79,13 @@ public class PlayerSpawner : MonoBehaviour {
             }
         }
 
-        if (score >= 60) {
-            
-           // timeLeft -= Time.deltaTime;
-           // if (timeLeft < 0)
-            //{
+        Scene currentSceneChange = SceneManager.GetActiveScene();
+        if (score >= 12900 && currentSceneChange.name == "SampleScene") {
+            timeLeft -= Time.deltaTime;
+           if (timeLeft < 0)
+            {
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-           // }
+           }
         }
 
         if (playerInstance == null && numLives > 0)
@@ -131,8 +127,9 @@ public class PlayerSpawner : MonoBehaviour {
     {
         if (numLives > 0 || playerInstance != null)
         {
+
             //GUI.Label(new Rect(0, 0, 100, 50), "Lives Left " + numLives);
-            GUI.Label(new Rect(300, 20, 100, 50), " " + score);
+            GUI.Label(new Rect(110, 4, 100, 100), " " + score);
             GUI.Label(new Rect(1300, 20, 100, 50), " " + (int)playTime + "s");
         }
         else

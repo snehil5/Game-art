@@ -15,6 +15,7 @@ TagManager:
   - spawning
   - Eye
   - boss
+  - transitionManage
   layers:
   - Default
   - TransparentFX

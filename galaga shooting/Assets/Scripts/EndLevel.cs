@@ -11,7 +11,7 @@ public class EndLevel : MonoBehaviour {
         if (score.getScore() >= winningScore)
         {
             
-            GUI.Label(new Rect(Screen.width / 2 - 50, Screen.height / 2 - 25, 100, 50), "Level Over! \nTotal Score:" + score.getScore());
+            GUI.Label(new Rect(Screen.width / 2 -50 , Screen.height / 2 - 25, 100, 50), "Level Over! \nTotal Score:" + score.getScore());
         }
 
     }
