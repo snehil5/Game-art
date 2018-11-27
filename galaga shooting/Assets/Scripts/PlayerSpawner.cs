@@ -15,7 +15,7 @@ public class PlayerSpawner : MonoBehaviour {
     float invulnTimer = 0;
 
     static public int numLives = 3;
-    public int score;
+    public static int score;
     float timeLeft = 5.0f;
     float playTime;
     float respawnTimer;

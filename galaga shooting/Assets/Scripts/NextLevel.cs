@@ -8,6 +8,7 @@ public class NextLevel : MonoBehaviour {
     public void LoadByIndex(int sceneIndex)
     {
         SceneManager.LoadScene(sceneIndex);
+
         Debug.Log("Loading level 2");
     }
 }
