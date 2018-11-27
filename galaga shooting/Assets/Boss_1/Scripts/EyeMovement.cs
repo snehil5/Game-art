@@ -12,6 +12,7 @@ public class EyeMovement : MonoBehaviour
     public GameObject destroyeffect;
     GameObject BOSS;
     BossHealth bosshp;
+    DamageHandler damaged;
 
     // Use this for initialization
     void Start()
@@ -79,6 +80,8 @@ public class EyeMovement : MonoBehaviour
 
         if (other.CompareTag("Player"))
         {
+            damaged = other.GetComponent<DamageHandler>();
+            damaged.hurt();
             Debug.Log("HURTTT!!");  //Player colliding with eye
             Destroy(Instantiate(destroyeffect, transform.position, Quaternion.identity), 1.0f);
             Destroy(gameObject);

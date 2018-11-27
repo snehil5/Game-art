@@ -7,6 +7,7 @@ public class Laser : MonoBehaviour {
     public float speedoflaser;
     public float lifetime;
     public int damage;
+    DamageHandler damaged;
 
     void Start()
     {
@@ -27,7 +28,8 @@ public class Laser : MonoBehaviour {
     {
         if (other.CompareTag("Player"))
         {
-            Debug.Log("HURTTT!!");
+            damaged = other.GetComponent<DamageHandler>();
+            damaged.hurt();
             DestroyProjectile();
         }
     }

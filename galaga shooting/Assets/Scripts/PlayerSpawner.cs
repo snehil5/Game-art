@@ -9,6 +9,7 @@ public class PlayerSpawner : MonoBehaviour {
     public GameObject mainMenu;
     public GameObject live1, live2, live3;
     GameObject playerInstance;
+    GameObject bomb;
 
     public float invulnPeriod = 0;
     float invulnTimer = 0;
@@ -82,13 +83,13 @@ public class PlayerSpawner : MonoBehaviour {
             }
         }
 
-        if (score >= 115 ) {
+        if (score >= 60) {
             
-            timeLeft -= Time.deltaTime;
-            if (timeLeft < 0)
-            {
-               // SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-            }
+           // timeLeft -= Time.deltaTime;
+           // if (timeLeft < 0)
+            //{
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+           // }
         }
 
         if (playerInstance == null && numLives > 0)
@@ -142,6 +143,11 @@ public class PlayerSpawner : MonoBehaviour {
             GUI.Label(new Rect(Screen.width / 2 - 50, Screen.height / 2 - 25, 100, 50), "Game Over! Total Score:" + score + " Total Time:" + (int)playTime + "s");
             retry.SetActive(true);
             mainMenu.SetActive(true);
+
+            //PLAYER IS COMPLETELY DEAD
+            bomb = GameObject.Find("Bomb(Clone)");
+            Destroy(bomb);
+            
         }
     }
     public int getScore()
