@@ -24,6 +24,12 @@ public class shieldStart : MonoBehaviour
             cube.SetActive(false);
         }
     }
+
+    private void Update()
+    {
+        Debug.Log(IsShieldOn);
+    }
+
     void OnTriggerEnter2D(Collider2D col)
     {
         if(col.tag == "Shield")

@@ -16,6 +16,8 @@ TagManager:
   - Eye
   - boss
   - transitionManage
+  - PlayerShield
+  - Shield
   layers:
   - Default
   - TransparentFX
