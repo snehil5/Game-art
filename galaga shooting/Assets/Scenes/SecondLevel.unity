@@ -3313,7 +3313,7 @@ MonoBehaviour:
   miniBoss: {fileID: 1236258475332464, guid: 5e389cc343cf28549a9cbed6e42b244f, type: 2}
   hazardCount: 20
   waveCount: 0
-  spawnWait: 0.5
+  spawnWait: 0.25
   startWait: 2
   waveWait: 3
   counter: 0

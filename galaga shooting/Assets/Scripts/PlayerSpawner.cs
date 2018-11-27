@@ -16,13 +16,13 @@ public class PlayerSpawner : MonoBehaviour {
 
     static public int numLives = 3;
     public int score;
-    float timeLeft;
+    float timeLeft = 5.0f;
     float playTime;
     float respawnTimer;
     public int count = 0;
-
-	// Use this for initialization
-	void Start () {
+    
+    // Use this for initialization
+    void Start () {
         score = 0;
         playTime = 0;
         Scene currentScene = SceneManager.GetActiveScene();
@@ -79,11 +79,8 @@ public class PlayerSpawner : MonoBehaviour {
             }
         }
 
-        if (score >= 60) {
-            
-            timeLeft = 5.0f;
-
-            
+        Scene currentSceneChange = SceneManager.GetActiveScene();
+        if (score >= 12900 && currentSceneChange.name == "SampleScene") {
             timeLeft -= Time.deltaTime;
            if (timeLeft < 0)
             {
