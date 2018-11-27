@@ -38,8 +38,13 @@ public class uGUI : MonoBehaviour
     {
         if (scripts.Count <= 0)
         {
-            nextButton.SetActive(true);
+            
             return;
+        }
+
+        if(scripts.Count == 1)
+        {
+            nextButton.SetActive(true);
         }
 
         text.TypeText(scripts.Dequeue(), onComplete: () => Debug.Log("TypeText Complete"));

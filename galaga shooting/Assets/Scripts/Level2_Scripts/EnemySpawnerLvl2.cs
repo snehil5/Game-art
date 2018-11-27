@@ -59,8 +59,8 @@ public class EnemySpawnerLvl2 : MonoBehaviour
     IEnumerator SpawnWaves()
     {
         yield return new WaitForSeconds(startWait);
-        hazardCount = 1;
-        spawnWait = 1.2f;
+        hazardCount = 10;
+        spawnWait = 1.1f;
         while (i < hazardCount)
         {
             random_number = Random.Range(1, 100);
@@ -90,10 +90,10 @@ public class EnemySpawnerLvl2 : MonoBehaviour
             Debug.Log(hazardCount + " is the needed");
             yield return new WaitForSeconds(spawnWait);
         }
-        hazardCount = 1;
+        hazardCount = 15;
         yield return new WaitForSeconds(waveWait);
         i = 0;
-        spawnWait = 0.9f;
+        spawnWait = 0.85f;
 
         // Second round of wave 
         while (i < hazardCount)

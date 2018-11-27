@@ -151,8 +151,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EnemyBulletfab: {fileID: 1501213556182860, guid: 67ad454cd0e44ca41865400f55e353c6,
     type: 2}
-  startShooting: 2
-  ShootingDelay: 2
+  startShooting: 0.5
+  ShootingDelay: 1.25
 --- !u!114 &114234162467880718
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -164,7 +164,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14817df635f842945b483bd36e98664d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 10
+  health: 6
   Explosion: {fileID: 1278752239827694, guid: f7abd1400df72674681b744391882742, type: 2}
   droptop: {fileID: 0}
   invulnPeriod: 0
