@@ -23,8 +23,8 @@ GameObject:
   - component: {fileID: 95695056084290526}
   - component: {fileID: 70172501933183982}
   - component: {fileID: 50827538340913186}
-  - component: {fileID: 114337737592371422}
   - component: {fileID: 114400553697720426}
+  - component: {fileID: 114994890220658434}
   m_Layer: 0
   m_Name: asteroid
   m_TagString: Enemy
@@ -98,20 +98,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &114337737592371422
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1640925199434858}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 385109c295c303c459924838ed61bf0f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ExplosionGo: {fileID: 1119533763840070, guid: 9fdf3930d7eba5c48871264a4dfd8a2c,
-    type: 2}
-  DropItem1: {fileID: 0}
 --- !u!114 &114400553697720426
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -123,6 +109,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 503011be97d72ce43867e253871c9141, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114994890220658434
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1640925199434858}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14817df635f842945b483bd36e98664d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 1
+  Explosion: {fileID: 1278752239827694, guid: f7abd1400df72674681b744391882742, type: 2}
+  droptop: {fileID: 1537526776279802, guid: 9e01895f399b85a438785ff32f897f6e, type: 2}
+  invulnPeriod: 0
 --- !u!212 &212412974020903030
 SpriteRenderer:
   m_ObjectHideFlags: 1

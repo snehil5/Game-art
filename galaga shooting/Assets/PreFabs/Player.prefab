@@ -291,7 +291,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1634919933007590}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.804191, y: 1.3966384, z: 0}
+  m_LocalPosition: {x: -1.9845719, y: -2.247899, z: 0}
   m_LocalScale: {x: 0.23, y: 0.15, z: 2}
   m_Children:
   - {fileID: 4698259579892424}
@@ -684,7 +684,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cube: {fileID: 1557223140730868}
-  SetshieldHP: 3
+  SetshieldHP: 4
   IsShieldOn: 0
 --- !u!114 &114741916306851028
 MonoBehaviour:

@@ -23,7 +23,7 @@ public class shield : MonoBehaviour
 
     void Update()
     {
-        if (shieldHP == 0 )
+        if (shieldHP <= 0 )
         {
             shieldbool.IsShieldOn = false;
             gameObject.SetActive(false);

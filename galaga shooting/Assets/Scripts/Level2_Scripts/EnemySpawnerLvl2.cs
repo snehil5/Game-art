@@ -60,7 +60,7 @@ public class EnemySpawnerLvl2 : MonoBehaviour
     {
         yield return new WaitForSeconds(startWait);
         hazardCount = 1;
-        spawnWait = 1.5f;
+        spawnWait = 1.2f;
         while (i < hazardCount)
         {
             random_number = Random.Range(1, 100);
@@ -93,28 +93,28 @@ public class EnemySpawnerLvl2 : MonoBehaviour
         hazardCount = 1;
         yield return new WaitForSeconds(waveWait);
         i = 0;
-        spawnWait = 1.5f;
+        spawnWait = 0.9f;
 
         // Second round of wave 
         while (i < hazardCount)
         {
             random_number = Random.Range(1, 100);
             //Debug.Log("Random number is: " + random_number);
-            if (random_number > 0 && random_number < 91)
+            if (random_number > 0 && random_number < 80)
             {
                 Vector2 min = Camera.main.ViewportToWorldPoint(new Vector2(.2f, 0));
                 Vector2 max = Camera.main.ViewportToWorldPoint(new Vector2(.8f, 1));
                 GameObject anEnemy = (GameObject)Instantiate(enemyGo);
                 anEnemy.transform.position = new Vector2(Random.Range(min.x, max.x), max.y);
             }
-            else if (random_number > 90 && random_number < 96)
+            else if (random_number > 81 && random_number < 90)
             {
                 Vector2 min2 = Camera.main.ViewportToWorldPoint(new Vector2(0, 0));
                 Vector2 max2 = Camera.main.ViewportToWorldPoint(new Vector2(1, 1));
                 GameObject anAst = (GameObject)Instantiate(asteroid1);
                 anAst.transform.position = new Vector2(Random.Range(min2.x, max2.x), max2.y);
             }
-            else if (random_number > 95 && random_number <= 100)
+            else if (random_number > 91 && random_number <= 100)
             {
                 Vector2 min3 = Camera.main.ViewportToWorldPoint(new Vector2(0, 0));
                 Vector2 max3 = Camera.main.ViewportToWorldPoint(new Vector2(1, 1));
@@ -141,8 +141,14 @@ public class EnemySpawnerLvl2 : MonoBehaviour
             else
             {
                 miniBoss_.transform.position = new Vector2(max4.x, max4.y);
+               
+                
+                spawnWait = 0.85f;
+
             }
+
         }
+
 
     }
 

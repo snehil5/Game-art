@@ -597,7 +597,7 @@ Animator:
   m_GameObject: {fileID: 917891913}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b74831533b3478042b4b3ab19d764f4b, type: 2}
+  m_Controller: {fileID: 9100000, guid: 4a2ad2b16d9818040863f58d44103eed, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -1229,7 +1229,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
-  m_SortingLayerID: 408938085
+  m_SortingLayerID: -956971933
   m_SortingOrder: 0
   m_TargetDisplay: 0
 --- !u!224 &1921621001
@@ -1269,7 +1269,7 @@ MonoBehaviour:
   bossName: {fileID: 1350294862}
   dialogueIMG: {fileID: 1675495558}
   captain: {fileID: 21300000, guid: aea50bb719366be4a8419970f1f9dad6, type: 3}
-  boss: {fileID: 21300000, guid: 7c444afb9774c3749ad0fb16ef722317, type: 3}
+  boss: {fileID: 21300000, guid: a2eadef564f946a4fad8db440904fafb, type: 3}
   bossHead: {fileID: 1373625112}
   nextButton: {fileID: 1824141280}
   sprite: 0
