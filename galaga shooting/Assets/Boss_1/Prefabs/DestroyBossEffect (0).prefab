@@ -72,7 +72,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosion: {fileID: 1373271828954626}
-  BOSS: {fileID: 0}
+  fullexplosion: {fileID: 0}
+  timetoexplode: 0
 --- !u!212 &212745326388422666
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -105,8 +106,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -948862249
-  m_SortingLayer: 4
+  m_SortingLayerID: -146053073
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 39ed3ab2bebdfed4ab7781e14113531f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

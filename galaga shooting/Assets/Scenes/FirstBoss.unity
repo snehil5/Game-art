@@ -1076,7 +1076,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 050feff42396f5440b51852a7ba33202, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerPrefab: {fileID: 1634919933007590, guid: 283fc31be9bb4da46af2e7424aabe0d3,
+  playerPrefab: {fileID: 1634919933007590, guid: 70c0b47b24d11204891d27a6799b60de,
     type: 2}
   retry: {fileID: 715004200}
   mainMenu: {fileID: 1986659272}

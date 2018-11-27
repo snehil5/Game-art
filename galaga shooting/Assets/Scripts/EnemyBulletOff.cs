@@ -38,6 +38,12 @@ public class EnemyBulletOff : MonoBehaviour {
             Destroy(Instantiate(bulletdeath, transform.position, transform.rotation), 0.25f);
             Destroy(gameObject);
         }
+
+        if(collision.tag == "PlayerShield")
+        {
+            Destroy(Instantiate(bulletdeath, transform.position, transform.rotation), 0.25f);
+            Destroy(gameObject);
+        }
     }
 
     // Update is called once per frame

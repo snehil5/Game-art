@@ -9,6 +9,7 @@ public class DamageHandler : MonoBehaviour {
     private Animator MyAnimator;
     public GameObject droptop;
 
+    private shieldStart shield;
 
     EnemySpawnerLvl2 countEnemy;
     public float invulnPeriod = 0;
@@ -18,6 +19,7 @@ public class DamageHandler : MonoBehaviour {
 
     private void Start()
     {
+        shield = GameObject.FindGameObjectWithTag("Player").GetComponent<shieldStart>();
         MyAnimator = GetComponent<Animator>();
         correctLayer = gameObject.layer;
         GameObject spwnObject = GameObject.FindWithTag("Respawn");
@@ -34,18 +36,21 @@ public class DamageHandler : MonoBehaviour {
     }
     private void OnTriggerEnter2D(Collider2D col)
     {
-        if (gameObject.tag == "Player")
+        if (shield.IsShieldOn == false)
         {
-            if (col.tag == "Enemy" || col.tag == "boss")
+            if (gameObject.tag == "Player")
             {
-                health = 0;
-            }
+                if (col.tag == "Enemy" || col.tag == "boss")
+                {
+                    health = 0;
+                }
 
+            }
         }
 
-        if (gameObject.tag == "Enemy")
+        if (gameObject.tag == "Enemy" )
         {
-            if (col.tag == "Player")
+            if (col.tag == "Player" || col.tag == "PlayerShield")
             {
                 health = 0;
             }
