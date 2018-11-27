@@ -97,6 +97,7 @@ GameObject:
   - component: {fileID: 212090415673783320}
   - component: {fileID: 114741916306851028}
   - component: {fileID: 58437531567827738}
+  - component: {fileID: 58175169734447688}
   m_Layer: 0
   m_Name: spr_shield (1)
   m_TagString: PlayerShield
@@ -331,6 +332,21 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!58 &58175169734447688
+CircleCollider2D:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1557223140730868}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.00000047683716}
+  serializedVersion: 2
+  m_Radius: 2.78
 --- !u!58 &58437531567827738
 CircleCollider2D:
   m_ObjectHideFlags: 1
