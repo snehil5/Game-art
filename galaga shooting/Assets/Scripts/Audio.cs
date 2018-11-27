@@ -25,20 +25,28 @@ public class Audio : MonoBehaviour {
         BossIntro = Resources.Load<AudioClip>("BossIntro");
         bossExplode = Resources.Load<AudioClip>("boss death");
 
-        effectSlider.value = 1f;
-        if (shooting == null)
+        if (effectSlider != null)
         {
-            Debug.Log("FAILED");
+            effectSlider.value = 1f;
+            if (shooting == null)
+            {
+                Debug.Log("FAILED");
+            }
+            if (shooting != null)
+                Debug.Log("WORKED");
         }
-        if (shooting != null)
-            Debug.Log("WORKED");
+        
 
     }
     // Update is called once per frame
     void Update()
     {
         audioSrc.volume = PlayerPrefs.GetFloat("Effect Volume");
-        effectSlider.value = PlayerPrefs.GetFloat("Effect Volume");
+        if (effectSlider != null)
+        {
+            effectSlider.value = PlayerPrefs.GetFloat("Effect Volume");
+        }
+        
     }
 
     public static void PlaySound(string clip)

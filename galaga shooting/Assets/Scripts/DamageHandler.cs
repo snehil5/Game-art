@@ -33,7 +33,11 @@ public class DamageHandler : MonoBehaviour {
         }
         GameObject enemylvl2 = GameObject.FindWithTag("spawning");
         
-        countEnemy = enemylvl2.GetComponent<EnemySpawnerLvl2>();
+        if (enemylvl2 != null)
+        {
+            countEnemy = enemylvl2.GetComponent<EnemySpawnerLvl2>();
+        }
+        
     }
     private void OnTriggerEnter2D(Collider2D col)
     {
