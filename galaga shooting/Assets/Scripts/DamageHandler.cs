@@ -11,6 +11,8 @@ public class DamageHandler : MonoBehaviour {
 
 
     EnemySpawnerLvl2 countEnemy;
+    EnemySpawnerLvl2 countMini;
+
     public float invulnPeriod = 0;
     float invulnTimer = 0;
     int correctLayer;
@@ -30,6 +32,7 @@ public class DamageHandler : MonoBehaviour {
             Debug.Log("cannot find PlayerSpawner.");
         }
         GameObject enemylvl2 = GameObject.FindWithTag("spawning");
+        countMini = enemylvl2.GetComponent<EnemySpawnerLvl2>();
         countEnemy = enemylvl2.GetComponent<EnemySpawnerLvl2>();
     }
     private void OnTriggerEnter2D(Collider2D col)
@@ -112,6 +115,10 @@ public class DamageHandler : MonoBehaviour {
             {
                 Debug.Log("check num");
                 countEnemy.addCount();
+            }
+            if (gameObject.tag == "miniBoss")
+            {
+                countMini.addMini();
             }
         }
         Destroy(Instantiate(Explosion,transform.position, transform.rotation), 0.7f);

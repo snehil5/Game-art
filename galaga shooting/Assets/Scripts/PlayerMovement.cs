@@ -14,9 +14,6 @@ public class PlayerMovement : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-
-
-
         Vector3 pos = transform.position;
 
         pos.y += Input.GetAxis("Vertical") * maxSpeed * Time.deltaTime;

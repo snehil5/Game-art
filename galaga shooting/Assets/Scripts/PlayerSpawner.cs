@@ -58,11 +58,7 @@ public class PlayerSpawner : MonoBehaviour {
     {
         score += newScore;
 
-        if (score >= 115)
-        {
-            timeLeft = 5.0f;
-            
-        }
+        
     }
 
     // Update is called once per frame
@@ -85,11 +81,14 @@ public class PlayerSpawner : MonoBehaviour {
 
         if (score >= 60) {
             
-           // timeLeft -= Time.deltaTime;
-           // if (timeLeft < 0)
-            //{
+            timeLeft = 5.0f;
+
+            
+            timeLeft -= Time.deltaTime;
+           if (timeLeft < 0)
+            {
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-           // }
+           }
         }
 
         if (playerInstance == null && numLives > 0)
